@@ -44,7 +44,7 @@ namespace APP_BANK
 
         private void label1_Click(object sender, EventArgs e)
         {
-            label1.Font = new Font("Inter", 14, FontStyle.Bold);
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -58,6 +58,30 @@ namespace APP_BANK
         }
 
         private void roundButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void roundButton5_Click(object sender, EventArgs e)
+        {
+            int contador = 0;
+
+            if (contador > 1)
+            {
+
+                this.FormBorderStyle = FormBorderStyle.Sizable;
+            }
+            else if (contador == 0)
+            {
+                
+                contador++;
+            }
+
+
+            AbrirFromMadre(new Cajero.Login());
+        }
+
+        private void label15_Click(object sender, EventArgs e)
         {
 
         }

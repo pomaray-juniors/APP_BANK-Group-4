@@ -49,6 +49,18 @@
     <Compile Include="ButtonRound.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Cajero\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cajero\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cajero\olvidoContra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cajero\olvidoContra.Designer.cs">
+      <DependentUpon>olvidoContra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Perfiles.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +69,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TextBoxCustom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TextBoxCustom.Designer.cs">
+      <DependentUpon>TextBoxCustom.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cajero\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cajero\olvidoContra.resx">
+      <DependentUpon>olvidoContra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Perfiles.resx">
       <DependentUpon>Perfiles.cs</DependentUpon>
     </EmbeddedResource>
@@ -70,6 +94,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TextBoxCustom.resx">
+      <DependentUpon>TextBoxCustom.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -154,6 +181,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\Icons\shield-check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Icons\user-grey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Icons\lock-bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Icons\envelope-simple-bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Icons\arrow-right-bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Icons\check-circle-bold.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -93,6 +93,16 @@ namespace APP_BANK.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow_right_bold {
+            get {
+                object obj = ResourceManager.GetObject("arrow-right-bold", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap arrow_right_color {
             get {
                 object obj = ResourceManager.GetObject("arrow-right-color", resourceCulture);
@@ -173,6 +183,16 @@ namespace APP_BANK.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap check_circle_bold {
+            get {
+                object obj = ResourceManager.GetObject("check-circle-bold", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap clock {
             get {
                 object obj = ResourceManager.GetObject("clock", resourceCulture);
@@ -183,9 +203,29 @@ namespace APP_BANK.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap envelope_simple_bold {
+            get {
+                object obj = ResourceManager.GetObject("envelope-simple-bold", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap house {
             get {
                 object obj = ResourceManager.GetObject("house", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lock_bold {
+            get {
+                object obj = ResourceManager.GetObject("lock-bold", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -246,6 +286,36 @@ namespace APP_BANK.Properties {
         internal static System.Drawing.Bitmap user_gear_black {
             get {
                 object obj = ResourceManager.GetObject("user-gear-black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_grey {
+            get {
+                object obj = ResourceManager.GetObject("user-grey", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_grey1 {
+            get {
+                object obj = ResourceManager.GetObject("user-grey1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_grey2 {
+            get {
+                object obj = ResourceManager.GetObject("user-grey2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

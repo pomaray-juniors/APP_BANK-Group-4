@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using APP_BANK.Cajero;
 
 namespace APP_BANK
 {
@@ -16,7 +17,7 @@ namespace APP_BANK
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Perfiles());
+            Application.Run(new  Perfiles());
         }
     }
 }

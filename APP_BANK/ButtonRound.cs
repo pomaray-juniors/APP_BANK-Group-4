@@ -19,7 +19,7 @@ namespace APP_BANCO
         private Color borderColor = Color.PaleVioletRed;
 
         //Properties
-        [Category("RJ Code Advance")]
+        [Category("Button-Redon-By:Rufher")]
         public int BorderSize
         {
             get { return borderSize; }
@@ -30,7 +30,7 @@ namespace APP_BANCO
             }
         }
 
-        [Category("RJ Code Advance")]
+        [Category("Button-Redon-By:Rufher")]
         public int BorderRadius
         {
             get { return borderRadius; }
@@ -41,7 +41,7 @@ namespace APP_BANCO
             }
         }
 
-        [Category("RJ Code Advance")]
+        [Category("Button-Redon-By:Rufher")]
         public Color BorderColor
         {
             get { return borderColor; }
@@ -52,14 +52,14 @@ namespace APP_BANCO
             }
         }
 
-        [Category("RJ Code Advance")]
+        [Category("Button-Redon-By:Rufher")]
         public Color BackgroundColor
         {
             get { return this.BackColor; }
             set { this.BackColor = value; }
         }
 
-        [Category("RJ Code Advance")]
+        [Category("Button-Redon-By:Rufher")]
         public Color TextColor
         {
             get { return this.ForeColor; }
