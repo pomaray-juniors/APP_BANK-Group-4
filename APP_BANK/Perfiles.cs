@@ -85,5 +85,26 @@ namespace APP_BANK
         {
 
         }
+
+        private void roundButton6_Click(object sender, EventArgs e)
+        {
+            int contador2 = 0;
+
+            if (contador2 > 1)
+            {
+
+                this.FormBorderStyle = FormBorderStyle.Sizable;
+            }
+            else if (contador2 == 0)
+            {
+
+                contador2++;
+            }
+            AbrirFromMadre(new ServicioAlCliente.LoginC());
+
+
+
+
+        }
     }
 }

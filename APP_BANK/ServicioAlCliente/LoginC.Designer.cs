@@ -1,6 +1,6 @@
-﻿namespace APP_BANK.Cajero
+﻿namespace APP_BANK.ServicioAlCliente
 {
-    partial class Login
+    partial class LoginC
     {
         /// <summary>
         /// Required designer variable.
@@ -79,16 +79,17 @@
             // 
             // contenedor
             // 
+            this.contenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.contenedor.Controls.Add(this.panel2);
             this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contenedor.Location = new System.Drawing.Point(0, 0);
             this.contenedor.Name = "contenedor";
             this.contenedor.Size = new System.Drawing.Size(1251, 711);
             this.contenedor.TabIndex = 0;
-            this.contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.panel2.Controls.Add(this.pictureBox11);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label16);
@@ -109,8 +110,8 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(12, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1214, 687);
-            this.panel2.TabIndex = 0;
+            this.panel2.Size = new System.Drawing.Size(1209, 636);
+            this.panel2.TabIndex = 10;
             // 
             // pictureBox11
             // 
@@ -123,6 +124,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.panel3.Controls.Add(this.panel1);
             this.panel3.Controls.Add(this.pictureBox4);
             this.panel3.Controls.Add(this.roundButton6);
@@ -133,11 +135,10 @@
             this.panel3.Controls.Add(this.textBoxCustom3);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.roundButton4);
-            this.panel3.Location = new System.Drawing.Point(40, 49);
+            this.panel3.Location = new System.Drawing.Point(20, 21);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1149, 463);
+            this.panel3.Size = new System.Drawing.Size(1012, 534);
             this.panel3.TabIndex = 17;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // panel1
             // 
@@ -147,9 +148,8 @@
             this.panel1.Controls.Add(this.roundButton9);
             this.panel1.Location = new System.Drawing.Point(17, 14);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(90, 84);
+            this.panel1.Size = new System.Drawing.Size(95, 175);
             this.panel1.TabIndex = 20;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             // 
             // pictureBox5
             // 
@@ -213,7 +213,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 19;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.pictureBox4.Click += new System.EventHandler(this.roundButton5_Click);
             // 
             // roundButton6
             // 
@@ -263,7 +263,6 @@
             this.roundButton5.TextColor = System.Drawing.Color.White;
             this.roundButton5.UseVisualStyleBackColor = false;
             this.roundButton5.Click += new System.EventHandler(this.roundButton5_Click);
-            this.roundButton5.Enter += new System.EventHandler(this.roundButton5_Enter);
             this.roundButton5.MouseEnter += new System.EventHandler(this.roundButton5_MouseEnter);
             this.roundButton5.MouseLeave += new System.EventHandler(this.roundButton5_MouseLeave);
             // 
@@ -351,7 +350,6 @@
             this.roundButton4.Text = "c";
             this.roundButton4.TextColor = System.Drawing.Color.White;
             this.roundButton4.UseVisualStyleBackColor = false;
-            this.roundButton4.Click += new System.EventHandler(this.roundButton4_Click);
             // 
             // label16
             // 
@@ -417,7 +415,6 @@
             this.roundButton2.Text = "Iniciar Sesión";
             this.roundButton2.TextColor = System.Drawing.Color.White;
             this.roundButton2.UseVisualStyleBackColor = false;
-            this.roundButton2.Click += new System.EventHandler(this.roundButton2_Click);
             // 
             // label7
             // 
@@ -463,7 +460,6 @@
             this.textBoxCustom2.TabIndex = 12;
             this.textBoxCustom2.Texts = "";
             this.textBoxCustom2.UnderlinedStyle = false;
-            this.textBoxCustom2._TextChanged += new System.EventHandler(this.textBoxCustom2__TextChanged);
             // 
             // label6
             // 
@@ -484,7 +480,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // textBoxCustom1
             // 
@@ -559,7 +554,6 @@
             this.roundButton1.Text = "c";
             this.roundButton1.TextColor = System.Drawing.Color.White;
             this.roundButton1.UseVisualStyleBackColor = false;
-            this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
             // 
             // label2
             // 
@@ -590,17 +584,16 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // Login
+            // LoginC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(1251, 711);
             this.Controls.Add(this.contenedor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Login";
+            this.Name = "LoginC";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
+            this.Text = "LoginC";
             this.contenedor.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -622,39 +615,39 @@
 
         private System.Windows.Forms.Panel contenedor;
         private System.Windows.Forms.Panel panel2;
-        private APP_BANCO.RoundButton roundButton1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private TextBoxCustom textBoxCustom1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label13;
+        private APP_BANCO.RoundButton roundButton9;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private APP_BANCO.RoundButton roundButton6;
+        private APP_BANCO.RoundButton roundButton5;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private TextBoxCustom textBoxCustom3;
+        private System.Windows.Forms.Label label8;
+        private APP_BANCO.RoundButton roundButton4;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private APP_BANCO.RoundButton roundButton3;
+        private APP_BANCO.RoundButton roundButton2;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox2;
         private TextBoxCustom textBoxCustom2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private APP_BANCO.RoundButton roundButton2;
-        private APP_BANCO.RoundButton roundButton3;
-        private System.Windows.Forms.Panel panel3;
-        private APP_BANCO.RoundButton roundButton4;
-        private APP_BANCO.RoundButton roundButton5;
-        private TextBoxCustom textBoxCustom3;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private APP_BANCO.RoundButton roundButton6;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private TextBoxCustom textBoxCustom1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private APP_BANCO.RoundButton roundButton1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label13;
-        private APP_BANCO.RoundButton roundButton9;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Timer timer1;
     }
 }

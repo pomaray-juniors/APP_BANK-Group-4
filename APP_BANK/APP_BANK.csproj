@@ -69,6 +69,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicioAlCliente\LoginC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServicioAlCliente\LoginC.Designer.cs">
+      <DependentUpon>LoginC.cs</DependentUpon>
+    </Compile>
     <Compile Include="TextBoxCustom.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -94,6 +100,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ServicioAlCliente\LoginC.resx">
+      <DependentUpon>LoginC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TextBoxCustom.resx">
       <DependentUpon>TextBoxCustom.cs</DependentUpon>
     </EmbeddedResource>
