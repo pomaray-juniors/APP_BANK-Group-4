@@ -137,7 +137,7 @@
             this.panel3.Controls.Add(this.roundButton4);
             this.panel3.Location = new System.Drawing.Point(20, 21);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1012, 534);
+            this.panel3.Size = new System.Drawing.Size(210, 201);
             this.panel3.TabIndex = 17;
             // 
             // panel1

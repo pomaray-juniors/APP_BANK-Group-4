@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace APP_BANK.Cajero
 {
-    public partial class olvidoContra : Form
+    public partial class Transferencias : Form
     {
-        public olvidoContra()
+        public Transferencias()
         {
             InitializeComponent();
         }

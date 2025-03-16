@@ -83,6 +83,16 @@ namespace APP_BANK.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow_down_white {
+            get {
+                object obj = ResourceManager.GetObject("arrow-down-white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap arrow_left_color {
             get {
                 object obj = ResourceManager.GetObject("arrow-left-color", resourceCulture);
@@ -133,6 +143,16 @@ namespace APP_BANK.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow_up_white {
+            get {
+                object obj = ResourceManager.GetObject("arrow-up-white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap arrows_left_right {
             get {
                 object obj = ResourceManager.GetObject("arrows-left-right", resourceCulture);
@@ -146,6 +166,16 @@ namespace APP_BANK.Properties {
         internal static System.Drawing.Bitmap arrows_left_right_black {
             get {
                 object obj = ResourceManager.GetObject("arrows-left-right-black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap arrows_left_right_bold {
+            get {
+                object obj = ResourceManager.GetObject("arrows-left-right-bold", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,6 +233,16 @@ namespace APP_BANK.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap clock_white {
+            get {
+                object obj = ResourceManager.GetObject("clock-white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap envelope_simple_bold {
             get {
                 object obj = ResourceManager.GetObject("envelope-simple-bold", resourceCulture);
@@ -223,6 +263,26 @@ namespace APP_BANK.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap house_black {
+            get {
+                object obj = ResourceManager.GetObject("house-black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap house_white {
+            get {
+                object obj = ResourceManager.GetObject("house-white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lock_bold {
             get {
                 object obj = ResourceManager.GetObject("lock-bold", resourceCulture);
@@ -236,6 +296,16 @@ namespace APP_BANK.Properties {
         internal static System.Drawing.Bitmap magnifying_glass {
             get {
                 object obj = ResourceManager.GetObject("magnifying-glass", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap magnifying_glass_white {
+            get {
+                object obj = ResourceManager.GetObject("magnifying-glass-white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

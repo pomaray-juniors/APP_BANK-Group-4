@@ -49,17 +49,23 @@
     <Compile Include="ButtonRound.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Cajero\homeCajero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cajero\homeCajero.Designer.cs">
+      <DependentUpon>homeCajero.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cajero\Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Cajero\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cajero\olvidoContra.cs">
+    <Compile Include="Cajero\Transferencias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cajero\olvidoContra.Designer.cs">
-      <DependentUpon>olvidoContra.cs</DependentUpon>
+    <Compile Include="Cajero\Transferencias.Designer.cs">
+      <DependentUpon>Transferencias.cs</DependentUpon>
     </Compile>
     <Compile Include="Perfiles.cs">
       <SubType>Form</SubType>
@@ -81,11 +87,14 @@
     <Compile Include="TextBoxCustom.Designer.cs">
       <DependentUpon>TextBoxCustom.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Cajero\homeCajero.resx">
+      <DependentUpon>homeCajero.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cajero\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cajero\olvidoContra.resx">
-      <DependentUpon>olvidoContra.cs</DependentUpon>
+    <EmbeddedResource Include="Cajero\Transferencias.resx">
+      <DependentUpon>Transferencias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Perfiles.resx">
       <DependentUpon>Perfiles.cs</DependentUpon>
@@ -205,6 +214,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\Icons\check-circle-bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Icons\arrows-left-right-bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Icons\house-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Icons\house-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Icons\arrow-down-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Icons\arrow-up-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Icons\magnifying-glass-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Icons\clock-white.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -42,7 +42,15 @@ namespace APP_BANK.Cajero
 
         private void roundButton2_Click(object sender, EventArgs e)
         {
+            if (textBoxCustom1.Texts == "admin" && textBoxCustom2.Texts == "admin")
+            {
 
+                AbrirFromMadre(new homeCajero());
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña incorrecta");
+            }
         }
 
         private void roundButton3_Click(object sender, EventArgs e)
@@ -231,6 +239,11 @@ namespace APP_BANK.Cajero
             panel1.Dock = DockStyle.None;
             panel3.Visible = false;
             panel2.Visible = true;
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
