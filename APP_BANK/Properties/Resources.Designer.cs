@@ -243,6 +243,16 @@ namespace APP_BANK.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap currency_dollar {
+            get {
+                object obj = ResourceManager.GetObject("currency-dollar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap envelope_simple_bold {
             get {
                 object obj = ResourceManager.GetObject("envelope-simple-bold", resourceCulture);

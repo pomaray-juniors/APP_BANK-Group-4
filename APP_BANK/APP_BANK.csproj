@@ -49,6 +49,18 @@
     <Compile Include="ButtonRound.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Cajero\BusquedaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cajero\BusquedaCliente.Designer.cs">
+      <DependentUpon>BusquedaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cajero\Deposito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cajero\Deposito.Designer.cs">
+      <DependentUpon>Deposito.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cajero\homeCajero.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +72,18 @@
     </Compile>
     <Compile Include="Cajero\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cajero\PanelControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cajero\PanelControl.Designer.cs">
+      <DependentUpon>PanelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cajero\Retiros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cajero\Retiros.Designer.cs">
+      <DependentUpon>Retiros.cs</DependentUpon>
     </Compile>
     <Compile Include="Cajero\Transferencias.cs">
       <SubType>Form</SubType>
@@ -87,11 +111,23 @@
     <Compile Include="TextBoxCustom.Designer.cs">
       <DependentUpon>TextBoxCustom.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Cajero\BusquedaCliente.resx">
+      <DependentUpon>BusquedaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cajero\Deposito.resx">
+      <DependentUpon>Deposito.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cajero\homeCajero.resx">
       <DependentUpon>homeCajero.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cajero\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cajero\PanelControl.resx">
+      <DependentUpon>PanelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cajero\Retiros.resx">
+      <DependentUpon>Retiros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cajero\Transferencias.resx">
       <DependentUpon>Transferencias.cs</DependentUpon>
@@ -235,6 +271,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\Icons\clock-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Icons\currency-dollar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

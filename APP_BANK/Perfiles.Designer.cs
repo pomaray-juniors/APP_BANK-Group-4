@@ -168,6 +168,7 @@
             this.roundButton6.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.roundButton6.BorderRadius = 10;
             this.roundButton6.BorderSize = 0;
+            this.roundButton6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.roundButton6.FlatAppearance.BorderSize = 0;
             this.roundButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundButton6.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -188,6 +189,7 @@
             this.roundButton5.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.roundButton5.BorderRadius = 10;
             this.roundButton5.BorderSize = 0;
+            this.roundButton5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.roundButton5.FlatAppearance.BorderSize = 0;
             this.roundButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundButton5.Font = new System.Drawing.Font("Inter", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -503,7 +505,7 @@
             this.roundButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
             this.roundButton2.BorderRadius = 10;
             this.roundButton2.BorderSize = 1;
-            this.roundButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundButton2.Cursor = System.Windows.Forms.Cursors.Default;
             this.roundButton2.FlatAppearance.BorderSize = 0;
             this.roundButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.roundButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
@@ -525,7 +527,7 @@
             this.roundButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
             this.roundButton1.BorderRadius = 10;
             this.roundButton1.BorderSize = 1;
-            this.roundButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundButton1.Cursor = System.Windows.Forms.Cursors.Default;
             this.roundButton1.FlatAppearance.BorderSize = 0;
             this.roundButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.roundButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
