@@ -182,5 +182,26 @@ namespace APP_BANK.ServicioAlCliente
 
             }
         }
+
+        private Image eyeOpen = APP_BANK.Properties.Resources.eye;
+        private Image eyeClosed = APP_BANK.Properties.Resources.eye_closed;
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            pictureBox6.Image = (pictureBox6.Image == eyeOpen) ? eyeClosed : eyeOpen;
+            if (pictureBox6.Image == eyeOpen)
+            {
+                textBoxCustom2.PasswordChar = false;
+            }
+            else
+            {
+                textBoxCustom2.PasswordChar = true;
+            }
+        }
+
+        private void roundButton2_Click(object sender, EventArgs e)
+        {
+            AbrirFromMadre(new ServicioAlCliente.homeServicioCliente());
+        }
     }
 }

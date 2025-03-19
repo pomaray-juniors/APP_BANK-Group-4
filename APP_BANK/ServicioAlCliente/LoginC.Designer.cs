@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.contenedor = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -67,6 +68,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.contenedor.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -90,6 +92,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+            this.panel2.Controls.Add(this.pictureBox6);
             this.panel2.Controls.Add(this.pictureBox11);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label16);
@@ -110,8 +113,20 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(12, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1209, 636);
+            this.panel2.Size = new System.Drawing.Size(1227, 636);
             this.panel2.TabIndex = 10;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox6.Image = global::APP_BANK.Properties.Resources.eye_closed;
+            this.pictureBox6.Location = new System.Drawing.Point(794, 361);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(28, 32);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 36;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // pictureBox11
             // 
@@ -398,8 +413,8 @@
             // 
             // roundButton2
             // 
-            this.roundButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(78)))), ((int)(((byte)(216)))));
-            this.roundButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(78)))), ((int)(((byte)(216)))));
+            this.roundButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(51)))), ((int)(((byte)(234)))));
+            this.roundButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(51)))), ((int)(((byte)(234)))));
             this.roundButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.roundButton2.BorderRadius = 8;
             this.roundButton2.BorderSize = 0;
@@ -415,6 +430,7 @@
             this.roundButton2.Text = "Iniciar Sesión";
             this.roundButton2.TextColor = System.Drawing.Color.White;
             this.roundButton2.UseVisualStyleBackColor = false;
+            this.roundButton2.Click += new System.EventHandler(this.roundButton2_Click);
             // 
             // label7
             // 
@@ -452,7 +468,7 @@
             this.textBoxCustom2.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.textBoxCustom2.Multiline = false;
             this.textBoxCustom2.Name = "textBoxCustom2";
-            this.textBoxCustom2.Padding = new System.Windows.Forms.Padding(40, 7, 10, 7);
+            this.textBoxCustom2.Padding = new System.Windows.Forms.Padding(40, 7, 40, 7);
             this.textBoxCustom2.PasswordChar = true;
             this.textBoxCustom2.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.textBoxCustom2.PlaceholderText = "Ingrese su contraseña";
@@ -597,6 +613,7 @@
             this.contenedor.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -649,5 +666,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }

@@ -13,15 +13,17 @@ namespace APP_BANK.Cajero
 {
     public partial class Login : Form
     {
-        
-        private int moveAmount = 15; // Velocidad de la animación
-        private int targetPosition; // Posición a la que se moverá la imagen
+        private Image eyeOpen = APP_BANK.Properties.Resources.eye;
+        private Image eyeClosed = APP_BANK.Properties.Resources.eye_closed;
+
+        private int moveAmount = 15; 
+        private int targetPosition; 
         public Login()
         {
             InitializeComponent();
             panel3.Visible = false;
             panel1.Visible = false;
-            
+
 
         }
 
@@ -56,7 +58,7 @@ namespace APP_BANK.Cajero
         private void roundButton3_Click(object sender, EventArgs e)
         {
             panel2.Visible = false;
-            
+
             AbrirFromMadre(new Perfiles());
 
 
@@ -92,7 +94,7 @@ namespace APP_BANK.Cajero
                 roundButton5.Enabled = true;
                 roundButton5.BackColor = Color.FromArgb(29, 78, 216);
                 pictureBox4.BackColor = Color.FromArgb(29, 78, 216);
-                
+
             }
             else
             {
@@ -104,7 +106,7 @@ namespace APP_BANK.Cajero
 
             };
 
-            
+
 
             this.BeginInvoke((MethodInvoker)delegate
             {
@@ -194,7 +196,7 @@ namespace APP_BANK.Cajero
         private void roundButton6_Click(object sender, EventArgs e)
         {
             panel3.Visible = false;
-            
+
         }
 
         private void timer_Tick(object sender, EventArgs e)
@@ -213,7 +215,7 @@ namespace APP_BANK.Cajero
                 panel1.Dock = DockStyle.Fill;
                 timer1.Start();
                 timer1.Interval = 3000;
-                
+
             }
         }
 
@@ -244,6 +246,18 @@ namespace APP_BANK.Cajero
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            pictureBox6.Image = (pictureBox6.Image == eyeOpen) ? eyeClosed : eyeOpen;
+            if (pictureBox6.Image == eyeOpen)
+            {
+                textBoxCustom2.PasswordChar = false;
+            }
+            else
+            {
+                textBoxCustom2.PasswordChar = true;
+            }
         }
     }
 }

@@ -31,25 +31,25 @@
             this.contenedor = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.contenido = new System.Windows.Forms.Panel();
             this.roundButton16 = new APP_BANCO.RoundButton();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.roundButton15 = new APP_BANCO.RoundButton();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.roundButton14 = new APP_BANCO.RoundButton();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.roundButton13 = new APP_BANCO.RoundButton();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.roundButton12 = new APP_BANCO.RoundButton();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.roundButton11 = new APP_BANCO.RoundButton();
             this.roundButton3 = new APP_BANCO.RoundButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.roundButton2 = new APP_BANCO.RoundButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.roundButton1 = new APP_BANCO.RoundButton();
+            this.contenido = new System.Windows.Forms.Panel();
             this.contenedor.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -108,120 +108,6 @@
             this.pictureBox11.TabIndex = 54;
             this.pictureBox11.TabStop = false;
             // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox10.Image = global::APP_BANK.Properties.Resources.magnifying_glass;
-            this.pictureBox10.Location = new System.Drawing.Point(85, 311);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 52;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox9.Image = global::APP_BANK.Properties.Resources.arrow_up;
-            this.pictureBox9.Location = new System.Drawing.Point(85, 259);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 50;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Image = global::APP_BANK.Properties.Resources.arrow_down;
-            this.pictureBox8.Location = new System.Drawing.Point(85, 207);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 48;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox7.Image = global::APP_BANK.Properties.Resources.arrows_left_right_black;
-            this.pictureBox7.Location = new System.Drawing.Point(86, 155);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 46;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Black;
-            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox6.Image = global::APP_BANK.Properties.Resources.house_white;
-            this.pictureBox6.Location = new System.Drawing.Point(86, 102);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 44;
-            this.pictureBox6.TabStop = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Controls.Add(this.roundButton2);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Controls.Add(this.roundButton1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1245, 65);
-            this.panel3.TabIndex = 0;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::APP_BANK.Properties.Resources.sign_out;
-            this.pictureBox2.Location = new System.Drawing.Point(1136, 16);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(26, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Inter", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(118, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(282, 30);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Sistema Bancario - Cajero";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
-            this.pictureBox1.Image = global::APP_BANK.Properties.Resources.arrows_left_right_bold;
-            this.pictureBox1.Location = new System.Drawing.Point(71, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(34, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // contenido
-            // 
-            this.contenido.Location = new System.Drawing.Point(314, 81);
-            this.contenido.Name = "contenido";
-            this.contenido.Size = new System.Drawing.Size(928, 540);
-            this.contenido.TabIndex = 56;
-            // 
             // roundButton16
             // 
             this.roundButton16.BackColor = System.Drawing.Color.Transparent;
@@ -249,6 +135,18 @@
             this.roundButton16.Click += new System.EventHandler(this.roundButton16_Click_1);
             this.roundButton16.MouseEnter += new System.EventHandler(this.roundButton_MouseEnter);
             this.roundButton16.MouseLeave += new System.EventHandler(this.roundButton_MouseLeave);
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox10.Image = global::APP_BANK.Properties.Resources.magnifying_glass;
+            this.pictureBox10.Location = new System.Drawing.Point(85, 311);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 52;
+            this.pictureBox10.TabStop = false;
             // 
             // roundButton15
             // 
@@ -278,6 +176,18 @@
             this.roundButton15.MouseEnter += new System.EventHandler(this.roundButton_MouseEnter);
             this.roundButton15.MouseLeave += new System.EventHandler(this.roundButton_MouseLeave);
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox9.Image = global::APP_BANK.Properties.Resources.arrow_up;
+            this.pictureBox9.Location = new System.Drawing.Point(85, 259);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 50;
+            this.pictureBox9.TabStop = false;
+            // 
             // roundButton14
             // 
             this.roundButton14.BackColor = System.Drawing.Color.Transparent;
@@ -305,6 +215,18 @@
             this.roundButton14.Click += new System.EventHandler(this.roundButton14_Click_1);
             this.roundButton14.MouseEnter += new System.EventHandler(this.roundButton_MouseEnter);
             this.roundButton14.MouseLeave += new System.EventHandler(this.roundButton_MouseLeave);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox8.Image = global::APP_BANK.Properties.Resources.arrow_down;
+            this.pictureBox8.Location = new System.Drawing.Point(85, 207);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 48;
+            this.pictureBox8.TabStop = false;
             // 
             // roundButton13
             // 
@@ -334,6 +256,18 @@
             this.roundButton13.MouseEnter += new System.EventHandler(this.roundButton_MouseEnter);
             this.roundButton13.MouseLeave += new System.EventHandler(this.roundButton_MouseLeave);
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox7.Image = global::APP_BANK.Properties.Resources.arrows_left_right_black;
+            this.pictureBox7.Location = new System.Drawing.Point(86, 155);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 46;
+            this.pictureBox7.TabStop = false;
+            // 
             // roundButton12
             // 
             this.roundButton12.BackColor = System.Drawing.Color.Transparent;
@@ -361,6 +295,18 @@
             this.roundButton12.Click += new System.EventHandler(this.roundButton12_Click);
             this.roundButton12.MouseEnter += new System.EventHandler(this.roundButton_MouseEnter);
             this.roundButton12.MouseLeave += new System.EventHandler(this.roundButton_MouseLeave);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Black;
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox6.Image = global::APP_BANK.Properties.Resources.house_white;
+            this.pictureBox6.Location = new System.Drawing.Point(86, 102);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 44;
+            this.pictureBox6.TabStop = false;
             // 
             // roundButton11
             // 
@@ -410,6 +356,32 @@
             this.roundButton3.UseVisualStyleBackColor = false;
             this.roundButton3.Click += new System.EventHandler(this.roundButton3_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel3.Controls.Add(this.pictureBox2);
+            this.panel3.Controls.Add(this.roundButton2);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Controls.Add(this.roundButton1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1245, 65);
+            this.panel3.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::APP_BANK.Properties.Resources.sign_out;
+            this.pictureBox2.Location = new System.Drawing.Point(1136, 16);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(26, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
             // roundButton2
             // 
             this.roundButton2.BackColor = System.Drawing.Color.Transparent;
@@ -436,6 +408,27 @@
             this.roundButton2.MouseEnter += new System.EventHandler(this.roundButton2_MouseEnter);
             this.roundButton2.MouseLeave += new System.EventHandler(this.roundButton2_MouseLeave);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Inter", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(118, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(282, 30);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Sistema Bancario - Cajero";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
+            this.pictureBox1.Image = global::APP_BANK.Properties.Resources.arrows_left_right_bold;
+            this.pictureBox1.Location = new System.Drawing.Point(71, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(34, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // roundButton1
             // 
             this.roundButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
@@ -452,6 +445,13 @@
             this.roundButton1.TabIndex = 1;
             this.roundButton1.TextColor = System.Drawing.Color.White;
             this.roundButton1.UseVisualStyleBackColor = false;
+            // 
+            // contenido
+            // 
+            this.contenido.Location = new System.Drawing.Point(314, 81);
+            this.contenido.Name = "contenido";
+            this.contenido.Size = new System.Drawing.Size(928, 540);
+            this.contenido.TabIndex = 56;
             // 
             // homeCajero
             // 
