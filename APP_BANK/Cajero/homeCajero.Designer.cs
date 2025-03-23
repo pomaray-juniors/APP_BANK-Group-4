@@ -381,6 +381,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // roundButton2
             // 
@@ -448,9 +449,9 @@
             // 
             // contenido
             // 
-            this.contenido.Location = new System.Drawing.Point(314, 81);
+            this.contenido.Location = new System.Drawing.Point(320, 81);
             this.contenido.Name = "contenido";
-            this.contenido.Size = new System.Drawing.Size(928, 540);
+            this.contenido.Size = new System.Drawing.Size(906, 537);
             this.contenido.TabIndex = 56;
             // 
             // homeCajero

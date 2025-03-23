@@ -33,8 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.7\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -99,11 +105,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicioAlCliente\AperturaCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServicioAlCliente\AperturaCuenta.Designer.cs">
+      <DependentUpon>AperturaCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServicioAlCliente\GestionCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServicioAlCliente\GestionCliente.Designer.cs">
+      <DependentUpon>GestionCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="ServicioAlCliente\homeServicioCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ServicioAlCliente\homeServicioCliente.Designer.cs">
       <DependentUpon>homeServicioCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServicioAlCliente\InicioSC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServicioAlCliente\InicioSC.Designer.cs">
+      <DependentUpon>InicioSC.cs</DependentUpon>
     </Compile>
     <Compile Include="ServicioAlCliente\LoginC.cs">
       <SubType>Form</SubType>
@@ -151,8 +175,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ServicioAlCliente\AperturaCuenta.resx">
+      <DependentUpon>AperturaCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServicioAlCliente\GestionCliente.resx">
+      <DependentUpon>GestionCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ServicioAlCliente\homeServicioCliente.resx">
       <DependentUpon>homeServicioCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServicioAlCliente\InicioSC.resx">
+      <DependentUpon>InicioSC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ServicioAlCliente\LoginC.resx">
       <DependentUpon>LoginC.cs</DependentUpon>
@@ -160,6 +193,7 @@
     <EmbeddedResource Include="TextBoxCustom.resx">
       <DependentUpon>TextBoxCustom.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -289,6 +323,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\Icons\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Icons\magnifying-glass %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

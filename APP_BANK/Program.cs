@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using APP_BANK.Cajero;
+using APP_BANK.ServicioAlCliente;
 
 namespace APP_BANK
 {
@@ -17,7 +18,7 @@ namespace APP_BANK
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Perfiles());
+            Application.Run(new homeServicioCliente());
         }
     }
 }

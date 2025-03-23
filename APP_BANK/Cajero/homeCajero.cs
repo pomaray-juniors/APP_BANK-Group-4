@@ -568,5 +568,10 @@ namespace APP_BANK.Cajero
         {
             AbrirFromMadre(new Cajero.Deposito());
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
