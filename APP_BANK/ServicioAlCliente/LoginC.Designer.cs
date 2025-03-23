@@ -152,8 +152,9 @@
             this.panel3.Controls.Add(this.roundButton4);
             this.panel3.Location = new System.Drawing.Point(20, 21);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(210, 201);
+            this.panel3.Size = new System.Drawing.Size(235, 227);
             this.panel3.TabIndex = 17;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // panel1
             // 
@@ -251,7 +252,6 @@
             this.roundButton6.Text = "Cancelar";
             this.roundButton6.TextColor = System.Drawing.Color.Black;
             this.roundButton6.UseVisualStyleBackColor = false;
-            this.roundButton6.Click += new System.EventHandler(this.roundButton6_Click);
             // 
             // roundButton5
             // 

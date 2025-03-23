@@ -12,10 +12,11 @@ using System.Windows.Forms;
 namespace APP_BANK.ServicioAlCliente
 {
     public partial class LoginC : Form
-
     {
-        private int moveAmount = 15; // Velocidad de la animación
-        private int targetPosition; // Posición a la que se moverá la imagen
+        
+        private int moveAmount = 15;
+        private int targetPosition;  
+
         public LoginC()
         {
             InitializeComponent();
@@ -23,79 +24,34 @@ namespace APP_BANK.ServicioAlCliente
             panel1.Visible = false;
         }
 
-        private void label7_Click(object sender, EventArgs e)
+     
+        private void StartAnimation()
         {
-            panel3.Visible = true;
-
-            //hace  que el panel3 se muestre en frente de los demas controles
-            panel3.BringToFront();
-            panel3.Dock = DockStyle.Fill;
-        }
-
-        private void AbrirFromMadre(object formhija)
-        {
-            if (contenedor.Controls.Count > 0)
-                this.contenedor.Controls.RemoveAt(0);
-
-            Form fh = formhija as Form;
-
-            // Establecer TopLevel en false para agregarlo al contenedor
-            fh.TopLevel = false;
-
-            // Ajustar Dock al contenedor
-            fh.Dock = DockStyle.Fill;
-
-            // Agregar el formulario al contenedor
-            this.contenedor.Controls.Add(fh);
-
-            // Ajustar FormBorderStyle del formulario hijo a None (sin bordes)
-            fh.FormBorderStyle = FormBorderStyle.None;
-
-            // Mostrar el formulario
-            fh.Show();
-
-
-        }
-
-        private bool EsCorreoValido(string email)
-        {
-            string patronCorreo = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
-            return Regex.IsMatch(email, patronCorreo);
-        }
-
-        private void roundButton3_Click(object sender, EventArgs e)
-        {
-            panel2.Visible = false;
-
-            AbrirFromMadre(new Perfiles());
-        }
-
-        private void textBoxCustom1__TextChanged(object sender, EventArgs e)
-        {
-           
-
-        }
-
-        private void roundButton5_Click(object sender, EventArgs e)
-        {
-            textBoxCustom3.Texts = "";
-
             targetPosition = pictureBox4.Left + moveAmount;
-
-            // Iniciar la animación
             timer.Start();
         }
 
-        private void roundButton5_MouseLeave(object sender, EventArgs e)
+       
+        private void roundButton5_Click(object sender, EventArgs e)
         {
-            if(roundButton5.Enabled)
-            {
-                pictureBox4.BackColor = Color.FromArgb(29, 78, 216);
+            textBoxCustom3.Texts = "";
+            StartAnimation();
+        }
 
+        
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            if (pictureBox4.Left < targetPosition)
+            {
+                pictureBox4.Left += 1; 
             }
             else
             {
-                pictureBox4.BackColor = Color.FromArgb(220, 29, 78, 216);
+                timer.Stop();
+                panel1.Visible = true;
+                panel1.Dock = DockStyle.Fill;
+                timer1.Interval = 3000; 
+                timer1.Start();
             }
         }
 
@@ -108,14 +64,45 @@ namespace APP_BANK.ServicioAlCliente
             panel2.Visible = true;
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        
+        private void label7_Click(object sender, EventArgs e)
         {
-
+            textBoxCustom1.Texts = "";
+            textBoxCustom2.Texts = "";
+            panel3.Visible = true;
+            panel3.BringToFront();
+            panel3.Dock = DockStyle.Fill;
         }
 
-        private void roundButton6_Click(object sender, EventArgs e)
+        
+        private void AbrirFromMadre(object formhija)
         {
-            panel3.Visible = false;
+            if (contenedor.Controls.Count > 0)
+                this.contenedor.Controls.RemoveAt(0);
+
+            Form fh = formhija as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.contenedor.Controls.Add(fh);
+            fh.FormBorderStyle = FormBorderStyle.None;
+            fh.Show();
+        }
+
+        private bool EsCorreoValido(string email)
+        {
+            string patronCorreo = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+            return Regex.IsMatch(email, patronCorreo);
+        }
+
+        private void roundButton3_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
+            AbrirFromMadre(new Perfiles());
+        }
+
+        private void textBoxCustom1__TextChanged(object sender, EventArgs e)
+        {
+            
         }
 
         private void roundButton5_MouseEnter(object sender, EventArgs e)
@@ -123,25 +110,35 @@ namespace APP_BANK.ServicioAlCliente
             pictureBox4.BackColor = Color.FromArgb(220, 29, 78, 216);
         }
 
+        private void roundButton5_MouseLeave(object sender, EventArgs e)
+        {
+            if (roundButton5.Enabled)
+            {
+                pictureBox4.BackColor = Color.FromArgb(29, 78, 216);
+            }
+            else
+            {
+                pictureBox4.BackColor = Color.FromArgb(220, 29, 78, 216);
+            }
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+           
+        }
+
         private void textBoxCustom3__TextChanged(object sender, EventArgs e)
         {
-
-
             string email = textBoxCustom3.Texts;
             if (EsCorreoValido(email))
             {
-
                 textBoxCustom3.BorderColor = Color.Green;
                 textBoxCustom3.BorderFocusColor = Color.Green;
-
-
                 textBoxCustom3.Invalidate();
                 textBoxCustom3.Update();
-
                 roundButton5.Enabled = true;
                 roundButton5.BackColor = Color.FromArgb(29, 78, 216);
                 pictureBox4.BackColor = Color.FromArgb(29, 78, 216);
-
             }
             else
             {
@@ -150,58 +147,33 @@ namespace APP_BANK.ServicioAlCliente
                 pictureBox4.BackColor = Color.FromArgb(146, 177, 245);
                 textBoxCustom3.BorderColor = Color.Red;
                 textBoxCustom3.Refresh();
-
             };
-
-
 
             this.BeginInvoke((MethodInvoker)delegate
             {
-
                 textBoxCustom3.BorderFocusColor = Color.Red;
                 textBoxCustom3.Refresh();
             });
         }
 
-        private void timer_Tick(object sender, EventArgs e)
-        {
-            if (pictureBox4.Left < targetPosition)
-            {
-                pictureBox4.Left += 1; // Ajusta la velocidad de la animación, moviéndose un píxel a la vez
-            }
-            else
-            {
-                // Detener la animación cuando se haya alcanzado la posición final
-                timer.Stop();
-
-                //!
-                panel1.Visible = true;
-                panel1.Dock = DockStyle.Fill;
-                timer1.Start();
-                timer1.Interval = 3000;
-
-            }
-        }
-
-        private Image eyeOpen = APP_BANK.Properties.Resources.eye;
-        private Image eyeClosed = APP_BANK.Properties.Resources.eye_closed;
+        
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            pictureBox6.Image = (pictureBox6.Image == eyeOpen) ? eyeClosed : eyeOpen;
-            if (pictureBox6.Image == eyeOpen)
-            {
-                textBoxCustom2.PasswordChar = false;
-            }
-            else
-            {
-                textBoxCustom2.PasswordChar = true;
-            }
+            // Código para togglear la imagen de eye en este formulario, si aplica
+            // Por ejemplo:
+            // pictureBox6.Image = (pictureBox6.Image == eyeOpen) ? eyeClosed : eyeOpen;
+            // y cambiar textBoxCustom2.PasswordChar según corresponda.
         }
 
         private void roundButton2_Click(object sender, EventArgs e)
         {
             AbrirFromMadre(new ServicioAlCliente.homeServicioCliente());
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+        }
+        
     }
 }

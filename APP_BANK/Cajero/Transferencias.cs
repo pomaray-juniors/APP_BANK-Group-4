@@ -31,5 +31,18 @@ namespace APP_BANK.Cajero
         {
 
         }
+
+        private void textBoxCustom3__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxCustom3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Bloquea la entrada si no es número
+            }
+        }
     }
 }

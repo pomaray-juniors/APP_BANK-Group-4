@@ -699,12 +699,5 @@ namespace APP_BANK.Cajero
                 pictureBox11.BackColor = Color.White;
             }
         }
-
-
-
-
-
-
-
     }
 }

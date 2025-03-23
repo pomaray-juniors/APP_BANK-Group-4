@@ -26,9 +26,10 @@ namespace APP_BANK.ServicioAlCliente
             _formPadre = formPadre; // Guarda la referencia
         }
 
+
         private void roundButton10_Click(object sender, EventArgs e)
         {
-            _formPadre.MoverFormulario();
+            _formPadre.MoverFormulariom();
         }
 
         private void roundButton17_Click(object sender, EventArgs e)

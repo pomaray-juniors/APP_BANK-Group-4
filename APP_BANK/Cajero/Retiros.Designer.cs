@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBoxCustom1 = new APP_BANK.TextBoxCustom();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.roundButton1 = new APP_BANCO.RoundButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBoxCustom3 = new APP_BANK.TextBoxCustom();
-            this.textBoxCustom2 = new APP_BANK.TextBoxCustom();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.textBoxCustom1 = new APP_BANK.TextBoxCustom();
+            this.roundButton1 = new APP_BANCO.RoundButton();
+            this.textBoxCustom3 = new APP_BANK.TextBoxCustom();
+            this.textBoxCustom2 = new APP_BANK.TextBoxCustom();
             this.roundButton4 = new APP_BANCO.RoundButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -67,28 +67,6 @@
             this.panel1.Size = new System.Drawing.Size(919, 548);
             this.panel1.TabIndex = 0;
             // 
-            // textBoxCustom1
-            // 
-            this.textBoxCustom1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxCustom1.BorderColor = System.Drawing.Color.DimGray;
-            this.textBoxCustom1.BorderFocusColor = System.Drawing.Color.LightGray;
-            this.textBoxCustom1.BorderRadius = 6;
-            this.textBoxCustom1.BorderSize = 1;
-            this.textBoxCustom1.Font = new System.Drawing.Font("Inter SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCustom1.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBoxCustom1.Location = new System.Drawing.Point(52, 302);
-            this.textBoxCustom1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.textBoxCustom1.Multiline = false;
-            this.textBoxCustom1.Name = "textBoxCustom1";
-            this.textBoxCustom1.Padding = new System.Windows.Forms.Padding(15, 7, 7, 7);
-            this.textBoxCustom1.PasswordChar = false;
-            this.textBoxCustom1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.textBoxCustom1.PlaceholderText = "Ingrese su número de identidad";
-            this.textBoxCustom1.Size = new System.Drawing.Size(799, 33);
-            this.textBoxCustom1.TabIndex = 38;
-            this.textBoxCustom1.Texts = "";
-            this.textBoxCustom1.UnderlinedStyle = false;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -111,26 +89,6 @@
             this.label1.TabIndex = 36;
             this.label1.Text = "Monto";
             // 
-            // roundButton1
-            // 
-            this.roundButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(119)))), ((int)(((byte)(6)))));
-            this.roundButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(119)))), ((int)(((byte)(6)))));
-            this.roundButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundButton1.BorderRadius = 8;
-            this.roundButton1.BorderSize = 0;
-            this.roundButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundButton1.FlatAppearance.BorderSize = 0;
-            this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton1.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundButton1.ForeColor = System.Drawing.Color.White;
-            this.roundButton1.Location = new System.Drawing.Point(52, 368);
-            this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(799, 40);
-            this.roundButton1.TabIndex = 35;
-            this.roundButton1.Text = "Continuar";
-            this.roundButton1.TextColor = System.Drawing.Color.White;
-            this.roundButton1.UseVisualStyleBackColor = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -141,50 +99,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 34;
             this.pictureBox2.TabStop = false;
-            // 
-            // textBoxCustom3
-            // 
-            this.textBoxCustom3.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxCustom3.BorderColor = System.Drawing.Color.DimGray;
-            this.textBoxCustom3.BorderFocusColor = System.Drawing.Color.LightGray;
-            this.textBoxCustom3.BorderRadius = 6;
-            this.textBoxCustom3.BorderSize = 1;
-            this.textBoxCustom3.Font = new System.Drawing.Font("Inter SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCustom3.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBoxCustom3.Location = new System.Drawing.Point(52, 215);
-            this.textBoxCustom3.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.textBoxCustom3.Multiline = false;
-            this.textBoxCustom3.Name = "textBoxCustom3";
-            this.textBoxCustom3.Padding = new System.Windows.Forms.Padding(35, 7, 7, 7);
-            this.textBoxCustom3.PasswordChar = false;
-            this.textBoxCustom3.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.textBoxCustom3.PlaceholderText = "00.0";
-            this.textBoxCustom3.Size = new System.Drawing.Size(797, 33);
-            this.textBoxCustom3.TabIndex = 33;
-            this.textBoxCustom3.Texts = "";
-            this.textBoxCustom3.UnderlinedStyle = false;
-            // 
-            // textBoxCustom2
-            // 
-            this.textBoxCustom2.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxCustom2.BorderColor = System.Drawing.Color.DimGray;
-            this.textBoxCustom2.BorderFocusColor = System.Drawing.Color.LightGray;
-            this.textBoxCustom2.BorderRadius = 6;
-            this.textBoxCustom2.BorderSize = 1;
-            this.textBoxCustom2.Font = new System.Drawing.Font("Inter SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCustom2.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBoxCustom2.Location = new System.Drawing.Point(47, 142);
-            this.textBoxCustom2.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.textBoxCustom2.Multiline = false;
-            this.textBoxCustom2.Name = "textBoxCustom2";
-            this.textBoxCustom2.Padding = new System.Windows.Forms.Padding(15, 7, 7, 7);
-            this.textBoxCustom2.PasswordChar = false;
-            this.textBoxCustom2.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.textBoxCustom2.PlaceholderText = "Ingrese el número de cuenta";
-            this.textBoxCustom2.Size = new System.Drawing.Size(799, 33);
-            this.textBoxCustom2.TabIndex = 32;
-            this.textBoxCustom2.Texts = "";
-            this.textBoxCustom2.UnderlinedStyle = false;
             // 
             // label2
             // 
@@ -230,6 +144,93 @@
             this.label3.Size = new System.Drawing.Size(87, 36);
             this.label3.TabIndex = 28;
             this.label3.Text = "Retiro";
+            // 
+            // textBoxCustom1
+            // 
+            this.textBoxCustom1.BackColor = System.Drawing.SystemColors.Window;
+            this.textBoxCustom1.BorderColor = System.Drawing.Color.DimGray;
+            this.textBoxCustom1.BorderFocusColor = System.Drawing.Color.LightGray;
+            this.textBoxCustom1.BorderRadius = 6;
+            this.textBoxCustom1.BorderSize = 1;
+            this.textBoxCustom1.Font = new System.Drawing.Font("Inter SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCustom1.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBoxCustom1.Location = new System.Drawing.Point(52, 302);
+            this.textBoxCustom1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.textBoxCustom1.Multiline = false;
+            this.textBoxCustom1.Name = "textBoxCustom1";
+            this.textBoxCustom1.Padding = new System.Windows.Forms.Padding(15, 7, 7, 7);
+            this.textBoxCustom1.PasswordChar = false;
+            this.textBoxCustom1.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.textBoxCustom1.PlaceholderText = "Ingrese su número de identidad";
+            this.textBoxCustom1.Size = new System.Drawing.Size(799, 33);
+            this.textBoxCustom1.TabIndex = 38;
+            this.textBoxCustom1.Texts = "";
+            this.textBoxCustom1.UnderlinedStyle = false;
+            // 
+            // roundButton1
+            // 
+            this.roundButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(119)))), ((int)(((byte)(6)))));
+            this.roundButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(119)))), ((int)(((byte)(6)))));
+            this.roundButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.roundButton1.BorderRadius = 8;
+            this.roundButton1.BorderSize = 0;
+            this.roundButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundButton1.FlatAppearance.BorderSize = 0;
+            this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundButton1.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundButton1.ForeColor = System.Drawing.Color.White;
+            this.roundButton1.Location = new System.Drawing.Point(52, 375);
+            this.roundButton1.Name = "roundButton1";
+            this.roundButton1.Size = new System.Drawing.Size(799, 40);
+            this.roundButton1.TabIndex = 35;
+            this.roundButton1.Text = "Continuar";
+            this.roundButton1.TextColor = System.Drawing.Color.White;
+            this.roundButton1.UseVisualStyleBackColor = false;
+            // 
+            // textBoxCustom3
+            // 
+            this.textBoxCustom3.BackColor = System.Drawing.SystemColors.Window;
+            this.textBoxCustom3.BorderColor = System.Drawing.Color.DimGray;
+            this.textBoxCustom3.BorderFocusColor = System.Drawing.Color.LightGray;
+            this.textBoxCustom3.BorderRadius = 6;
+            this.textBoxCustom3.BorderSize = 1;
+            this.textBoxCustom3.Font = new System.Drawing.Font("Inter SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCustom3.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBoxCustom3.Location = new System.Drawing.Point(52, 215);
+            this.textBoxCustom3.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.textBoxCustom3.Multiline = false;
+            this.textBoxCustom3.Name = "textBoxCustom3";
+            this.textBoxCustom3.Padding = new System.Windows.Forms.Padding(35, 7, 7, 7);
+            this.textBoxCustom3.PasswordChar = false;
+            this.textBoxCustom3.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.textBoxCustom3.PlaceholderText = "00.0";
+            this.textBoxCustom3.Size = new System.Drawing.Size(797, 33);
+            this.textBoxCustom3.TabIndex = 33;
+            this.textBoxCustom3.Texts = "";
+            this.textBoxCustom3.UnderlinedStyle = false;
+            this.textBoxCustom3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCustom3_KeyPress);
+            // 
+            // textBoxCustom2
+            // 
+            this.textBoxCustom2.BackColor = System.Drawing.SystemColors.Window;
+            this.textBoxCustom2.BorderColor = System.Drawing.Color.DimGray;
+            this.textBoxCustom2.BorderFocusColor = System.Drawing.Color.LightGray;
+            this.textBoxCustom2.BorderRadius = 6;
+            this.textBoxCustom2.BorderSize = 1;
+            this.textBoxCustom2.Font = new System.Drawing.Font("Inter SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCustom2.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBoxCustom2.Location = new System.Drawing.Point(47, 142);
+            this.textBoxCustom2.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.textBoxCustom2.Multiline = false;
+            this.textBoxCustom2.Name = "textBoxCustom2";
+            this.textBoxCustom2.Padding = new System.Windows.Forms.Padding(15, 7, 7, 7);
+            this.textBoxCustom2.PasswordChar = false;
+            this.textBoxCustom2.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.textBoxCustom2.PlaceholderText = "Ingrese el número de cuenta";
+            this.textBoxCustom2.Size = new System.Drawing.Size(799, 33);
+            this.textBoxCustom2.TabIndex = 32;
+            this.textBoxCustom2.Texts = "";
+            this.textBoxCustom2.UnderlinedStyle = false;
             // 
             // roundButton4
             // 

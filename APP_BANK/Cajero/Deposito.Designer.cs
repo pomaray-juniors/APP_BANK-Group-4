@@ -51,6 +51,9 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.panel1.Controls.Add(this.textBoxCustom1);
             this.panel1.Controls.Add(this.label6);
@@ -67,10 +70,9 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.roundButton4);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(919, 548);
+            this.panel1.Size = new System.Drawing.Size(920, 548);
             this.panel1.TabIndex = 0;
             // 
             // textBoxCustom1
@@ -199,6 +201,7 @@
             this.textBoxCustom3.TabIndex = 21;
             this.textBoxCustom3.Texts = "";
             this.textBoxCustom3.UnderlinedStyle = false;
+            this.textBoxCustom3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCustom3_KeyPress);
             // 
             // label5
             // 

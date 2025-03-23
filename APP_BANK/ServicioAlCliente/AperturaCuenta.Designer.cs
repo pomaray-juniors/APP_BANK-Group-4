@@ -33,12 +33,32 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.paso3 = new System.Windows.Forms.Panel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2CustomRadioButton3 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.textBoxCustom8 = new APP_BANK.TextBoxCustom();
+            this.label12 = new System.Windows.Forms.Label();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2CustomRadioButton2 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2CustomRadioButton1 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.roundButton3 = new APP_BANCO.RoundButton();
+            this.roundButton5 = new APP_BANCO.RoundButton();
+            this.label11 = new System.Windows.Forms.Label();
             this.Paso2 = new System.Windows.Forms.Panel();
             this.roundButton2 = new APP_BANCO.RoundButton();
             this.textBoxCustom7 = new APP_BANK.TextBoxCustom();
             this.roundButton1 = new APP_BANCO.RoundButton();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBoxCustom4 = new APP_BANK.TextBoxCustom();
             this.label8 = new System.Windows.Forms.Label();
             this.textBoxCustom5 = new APP_BANK.TextBoxCustom();
             this.label9 = new System.Windows.Forms.Label();
@@ -62,37 +82,17 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.roundButton4 = new APP_BANCO.RoundButton();
-            this.paso3 = new System.Windows.Forms.Panel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2CustomRadioButton3 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.textBoxCustom8 = new APP_BANK.TextBoxCustom();
-            this.label12 = new System.Windows.Forms.Label();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2CustomRadioButton2 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2CustomRadioButton1 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.roundButton3 = new APP_BANCO.RoundButton();
-            this.roundButton5 = new APP_BANCO.RoundButton();
-            this.label11 = new System.Windows.Forms.Label();
+            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.Paso2.SuspendLayout();
-            this.paso1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.paso3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
+            this.Paso2.SuspendLayout();
+            this.paso1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -159,21 +159,338 @@
             this.panel2.TabIndex = 59;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // paso3
+            // 
+            this.paso3.Controls.Add(this.guna2HtmlLabel1);
+            this.paso3.Controls.Add(this.guna2CheckBox1);
+            this.paso3.Controls.Add(this.pictureBox2);
+            this.paso3.Controls.Add(this.guna2Panel3);
+            this.paso3.Controls.Add(this.textBoxCustom8);
+            this.paso3.Controls.Add(this.label12);
+            this.paso3.Controls.Add(this.guna2Panel2);
+            this.paso3.Controls.Add(this.guna2Panel1);
+            this.paso3.Controls.Add(this.roundButton3);
+            this.paso3.Controls.Add(this.roundButton5);
+            this.paso3.Controls.Add(this.label11);
+            this.paso3.Location = new System.Drawing.Point(713, 8);
+            this.paso3.Name = "paso3";
+            this.paso3.Size = new System.Drawing.Size(31, 18);
+            this.paso3.TabIndex = 43;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Inter SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Blue;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(149, 272);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(172, 24);
+            this.guna2HtmlLabel1.TabIndex = 49;
+            this.guna2HtmlLabel1.Text = "términos y condiciones ";
+            this.guna2HtmlLabel1.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
+            // 
+            // guna2CheckBox1
+            // 
+            this.guna2CheckBox1.Animated = true;
+            this.guna2CheckBox1.AutoSize = true;
+            this.guna2CheckBox1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.guna2CheckBox1.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.guna2CheckBox1.CheckedState.BorderRadius = 6;
+            this.guna2CheckBox1.CheckedState.BorderThickness = 2;
+            this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.Black;
+            this.guna2CheckBox1.CheckMarkColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2CheckBox1.Font = new System.Drawing.Font("Inter SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2CheckBox1.Location = new System.Drawing.Point(49, 272);
+            this.guna2CheckBox1.Name = "guna2CheckBox1";
+            this.guna2CheckBox1.Size = new System.Drawing.Size(557, 26);
+            this.guna2CheckBox1.TabIndex = 47;
+            this.guna2CheckBox1.Text = "Acepto los                                            del banco para la apertura " +
+    "de cuentas";
+            this.guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.Silver;
+            this.guna2CheckBox1.UncheckedState.BorderRadius = 6;
+            this.guna2CheckBox1.UncheckedState.BorderThickness = 2;
+            this.guna2CheckBox1.UncheckedState.FillColor = System.Drawing.Color.Silver;
+            this.guna2CheckBox1.CheckedChanged += new System.EventHandler(this.guna2CheckBox1_CheckedChanged);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::APP_BANK.Properties.Resources.currency_dollar;
+            this.pictureBox2.Location = new System.Drawing.Point(53, 224);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(17, 28);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 46;
+            this.pictureBox2.TabStop = false;
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.BorderColor = System.Drawing.Color.Gray;
+            this.guna2Panel3.BorderRadius = 5;
+            this.guna2Panel3.BorderThickness = 1;
+            this.guna2Panel3.Controls.Add(this.guna2CustomRadioButton3);
+            this.guna2Panel3.Controls.Add(this.label20);
+            this.guna2Panel3.Controls.Add(this.label21);
+            this.guna2Panel3.Location = new System.Drawing.Point(42, 146);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(750, 48);
+            this.guna2Panel3.TabIndex = 45;
+            // 
+            // guna2CustomRadioButton3
+            // 
+            this.guna2CustomRadioButton3.Animated = true;
+            this.guna2CustomRadioButton3.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.guna2CustomRadioButton3.CheckedState.BorderThickness = 1;
+            this.guna2CustomRadioButton3.CheckedState.FillColor = System.Drawing.Color.Black;
+            this.guna2CustomRadioButton3.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2CustomRadioButton3.CheckedState.InnerOffset = 2;
+            this.guna2CustomRadioButton3.Location = new System.Drawing.Point(15, 15);
+            this.guna2CustomRadioButton3.Name = "guna2CustomRadioButton3";
+            this.guna2CustomRadioButton3.Size = new System.Drawing.Size(20, 20);
+            this.guna2CustomRadioButton3.TabIndex = 47;
+            this.guna2CustomRadioButton3.Text = "guna2CustomRadioButton3";
+            this.guna2CustomRadioButton3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CustomRadioButton3.UncheckedState.BorderThickness = 2;
+            this.guna2CustomRadioButton3.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomRadioButton3.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.guna2CustomRadioButton3.CheckedChanged += new System.EventHandler(this.guna2CustomRadioButton3_CheckedChanged);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label20.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label20.Location = new System.Drawing.Point(50, 25);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(183, 17);
+            this.label20.TabIndex = 43;
+            this.label20.Text = "Para inversiones a largo plazo";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label21.Font = new System.Drawing.Font("Inter SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(50, 7);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(134, 18);
+            this.label21.TabIndex = 43;
+            this.label21.Text = "Cuenta de inversión";
+            // 
+            // textBoxCustom8
+            // 
+            this.textBoxCustom8.BackColor = System.Drawing.SystemColors.Window;
+            this.textBoxCustom8.BorderColor = System.Drawing.Color.DimGray;
+            this.textBoxCustom8.BorderFocusColor = System.Drawing.Color.LightGray;
+            this.textBoxCustom8.BorderRadius = 6;
+            this.textBoxCustom8.BorderSize = 1;
+            this.textBoxCustom8.Font = new System.Drawing.Font("Inter SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCustom8.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBoxCustom8.Location = new System.Drawing.Point(43, 221);
+            this.textBoxCustom8.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.textBoxCustom8.Multiline = false;
+            this.textBoxCustom8.Name = "textBoxCustom8";
+            this.textBoxCustom8.Padding = new System.Windows.Forms.Padding(35, 7, 7, 7);
+            this.textBoxCustom8.PasswordChar = false;
+            this.textBoxCustom8.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.textBoxCustom8.PlaceholderText = "00.0";
+            this.textBoxCustom8.Size = new System.Drawing.Size(749, 33);
+            this.textBoxCustom8.TabIndex = 45;
+            this.textBoxCustom8.Texts = "";
+            this.textBoxCustom8.UnderlinedStyle = false;
+            this.textBoxCustom8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCustom8_KeyPress);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Inter SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(46, 199);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(102, 18);
+            this.label12.TabIndex = 44;
+            this.label12.Text = "Depósito inicial";
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BorderColor = System.Drawing.Color.Gray;
+            this.guna2Panel2.BorderRadius = 5;
+            this.guna2Panel2.BorderThickness = 1;
+            this.guna2Panel2.Controls.Add(this.guna2CustomRadioButton2);
+            this.guna2Panel2.Controls.Add(this.label18);
+            this.guna2Panel2.Controls.Add(this.label19);
+            this.guna2Panel2.Location = new System.Drawing.Point(42, 92);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(750, 48);
+            this.guna2Panel2.TabIndex = 44;
+            // 
+            // guna2CustomRadioButton2
+            // 
+            this.guna2CustomRadioButton2.Animated = true;
+            this.guna2CustomRadioButton2.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.guna2CustomRadioButton2.CheckedState.BorderThickness = 1;
+            this.guna2CustomRadioButton2.CheckedState.FillColor = System.Drawing.Color.Black;
+            this.guna2CustomRadioButton2.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2CustomRadioButton2.CheckedState.InnerOffset = 2;
+            this.guna2CustomRadioButton2.Location = new System.Drawing.Point(15, 14);
+            this.guna2CustomRadioButton2.Name = "guna2CustomRadioButton2";
+            this.guna2CustomRadioButton2.Size = new System.Drawing.Size(20, 20);
+            this.guna2CustomRadioButton2.TabIndex = 45;
+            this.guna2CustomRadioButton2.Text = "guna2CustomRadioButton2";
+            this.guna2CustomRadioButton2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CustomRadioButton2.UncheckedState.BorderThickness = 2;
+            this.guna2CustomRadioButton2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomRadioButton2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.guna2CustomRadioButton2.CheckedChanged += new System.EventHandler(this.guna2CustomRadioButton2_CheckedChanged);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label18.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label18.Location = new System.Drawing.Point(50, 25);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(179, 17);
+            this.label18.TabIndex = 43;
+            this.label18.Text = "Genera interes sobre tu saldo";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label19.Font = new System.Drawing.Font("Inter SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(50, 7);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(119, 18);
+            this.label19.TabIndex = 43;
+            this.label19.Text = "Cuenta de Ahorro";
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BorderColor = System.Drawing.Color.Gray;
+            this.guna2Panel1.BorderRadius = 5;
+            this.guna2Panel1.BorderThickness = 1;
+            this.guna2Panel1.Controls.Add(this.guna2CustomRadioButton1);
+            this.guna2Panel1.Controls.Add(this.label14);
+            this.guna2Panel1.Controls.Add(this.label13);
+            this.guna2Panel1.Location = new System.Drawing.Point(42, 38);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(750, 48);
+            this.guna2Panel1.TabIndex = 6;
+            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // guna2CustomRadioButton1
+            // 
+            this.guna2CustomRadioButton1.Animated = true;
+            this.guna2CustomRadioButton1.CheckedState.BorderColor = System.Drawing.Color.Black;
+            this.guna2CustomRadioButton1.CheckedState.BorderThickness = 1;
+            this.guna2CustomRadioButton1.CheckedState.FillColor = System.Drawing.Color.Black;
+            this.guna2CustomRadioButton1.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2CustomRadioButton1.CheckedState.InnerOffset = 2;
+            this.guna2CustomRadioButton1.Location = new System.Drawing.Point(15, 13);
+            this.guna2CustomRadioButton1.Name = "guna2CustomRadioButton1";
+            this.guna2CustomRadioButton1.Size = new System.Drawing.Size(20, 20);
+            this.guna2CustomRadioButton1.TabIndex = 44;
+            this.guna2CustomRadioButton1.Text = "guna2CustomRadioButton1";
+            this.guna2CustomRadioButton1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CustomRadioButton1.UncheckedState.BorderThickness = 2;
+            this.guna2CustomRadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomRadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.guna2CustomRadioButton1.CheckedChanged += new System.EventHandler(this.guna2CustomRadioButton1_CheckedChanged);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label14.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label14.Location = new System.Drawing.Point(50, 25);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(194, 17);
+            this.label14.TabIndex = 43;
+            this.label14.Text = "Ideal para transacciones diarias";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label13.Font = new System.Drawing.Font("Inter SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(50, 7);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(115, 18);
+            this.label13.TabIndex = 43;
+            this.label13.Text = "Cuenta corriente";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // roundButton3
+            // 
+            this.roundButton3.BackColor = System.Drawing.Color.Transparent;
+            this.roundButton3.BackgroundColor = System.Drawing.Color.Transparent;
+            this.roundButton3.BorderColor = System.Drawing.Color.Silver;
+            this.roundButton3.BorderRadius = 6;
+            this.roundButton3.BorderSize = 1;
+            this.roundButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundButton3.FlatAppearance.BorderSize = 0;
+            this.roundButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundButton3.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundButton3.ForeColor = System.Drawing.Color.Black;
+            this.roundButton3.Location = new System.Drawing.Point(75, 304);
+            this.roundButton3.Name = "roundButton3";
+            this.roundButton3.Size = new System.Drawing.Size(119, 39);
+            this.roundButton3.TabIndex = 42;
+            this.roundButton3.Text = "Anterior";
+            this.roundButton3.TextColor = System.Drawing.Color.Black;
+            this.roundButton3.UseVisualStyleBackColor = false;
+            this.roundButton3.Click += new System.EventHandler(this.roundButton3_Click);
+            // 
+            // roundButton5
+            // 
+            this.roundButton5.BackColor = System.Drawing.Color.DimGray;
+            this.roundButton5.BackgroundColor = System.Drawing.Color.DimGray;
+            this.roundButton5.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.roundButton5.BorderRadius = 6;
+            this.roundButton5.BorderSize = 0;
+            this.roundButton5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundButton5.FlatAppearance.BorderSize = 0;
+            this.roundButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundButton5.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundButton5.ForeColor = System.Drawing.Color.White;
+            this.roundButton5.Location = new System.Drawing.Point(661, 304);
+            this.roundButton5.Name = "roundButton5";
+            this.roundButton5.Size = new System.Drawing.Size(119, 39);
+            this.roundButton5.TabIndex = 40;
+            this.roundButton5.Text = "Continuar";
+            this.roundButton5.TextColor = System.Drawing.Color.White;
+            this.roundButton5.UseVisualStyleBackColor = false;
+            this.roundButton5.Click += new System.EventHandler(this.roundButton5_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label11.Font = new System.Drawing.Font("Inter SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(40, 15);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(102, 18);
+            this.label11.TabIndex = 39;
+            this.label11.Text = "Tipo de cuenta";
+            // 
             // Paso2
             // 
+            this.Paso2.Controls.Add(this.guna2ComboBox2);
             this.Paso2.Controls.Add(this.roundButton2);
             this.Paso2.Controls.Add(this.textBoxCustom7);
             this.Paso2.Controls.Add(this.roundButton1);
             this.Paso2.Controls.Add(this.label7);
-            this.Paso2.Controls.Add(this.textBoxCustom4);
             this.Paso2.Controls.Add(this.label8);
             this.Paso2.Controls.Add(this.textBoxCustom5);
             this.Paso2.Controls.Add(this.label9);
             this.Paso2.Controls.Add(this.textBoxCustom6);
             this.Paso2.Controls.Add(this.label10);
-            this.Paso2.Location = new System.Drawing.Point(694, 9);
+            this.Paso2.Location = new System.Drawing.Point(605, 8);
             this.Paso2.Name = "Paso2";
-            this.Paso2.Size = new System.Drawing.Size(30, 17);
+            this.Paso2.Size = new System.Drawing.Size(39, 29);
             this.Paso2.TabIndex = 2;
             this.Paso2.Paint += new System.Windows.Forms.PaintEventHandler(this.Paso2_Paint);
             // 
@@ -189,7 +506,7 @@
             this.roundButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundButton2.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundButton2.ForeColor = System.Drawing.Color.Black;
-            this.roundButton2.Location = new System.Drawing.Point(75, 304);
+            this.roundButton2.Location = new System.Drawing.Point(47, 304);
             this.roundButton2.Name = "roundButton2";
             this.roundButton2.Size = new System.Drawing.Size(119, 39);
             this.roundButton2.TabIndex = 42;
@@ -251,28 +568,6 @@
             this.label7.Size = new System.Drawing.Size(127, 18);
             this.label7.TabIndex = 39;
             this.label7.Text = "Correo Electrónico";
-            // 
-            // textBoxCustom4
-            // 
-            this.textBoxCustom4.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxCustom4.BorderColor = System.Drawing.Color.DimGray;
-            this.textBoxCustom4.BorderFocusColor = System.Drawing.Color.LightGray;
-            this.textBoxCustom4.BorderRadius = 6;
-            this.textBoxCustom4.BorderSize = 1;
-            this.textBoxCustom4.Font = new System.Drawing.Font("Inter SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCustom4.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBoxCustom4.Location = new System.Drawing.Point(35, 256);
-            this.textBoxCustom4.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.textBoxCustom4.Multiline = false;
-            this.textBoxCustom4.Name = "textBoxCustom4";
-            this.textBoxCustom4.Padding = new System.Windows.Forms.Padding(15, 7, 7, 7);
-            this.textBoxCustom4.PasswordChar = false;
-            this.textBoxCustom4.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.textBoxCustom4.PlaceholderText = "Ingrese su ciudad";
-            this.textBoxCustom4.Size = new System.Drawing.Size(757, 33);
-            this.textBoxCustom4.TabIndex = 38;
-            this.textBoxCustom4.Texts = "";
-            this.textBoxCustom4.UnderlinedStyle = false;
             // 
             // label8
             // 
@@ -364,7 +659,7 @@
             this.paso1.Controls.Add(this.guna2ComboBox1);
             this.paso1.Location = new System.Drawing.Point(661, 8);
             this.paso1.Name = "paso1";
-            this.paso1.Size = new System.Drawing.Size(27, 18);
+            this.paso1.Size = new System.Drawing.Size(35, 24);
             this.paso1.TabIndex = 1;
             // 
             // roundButton8
@@ -639,321 +934,87 @@
             this.roundButton4.TextColor = System.Drawing.Color.White;
             this.roundButton4.UseVisualStyleBackColor = false;
             // 
-            // paso3
+            // guna2ComboBox2
             // 
-            this.paso3.Controls.Add(this.guna2HtmlLabel1);
-            this.paso3.Controls.Add(this.guna2CheckBox1);
-            this.paso3.Controls.Add(this.pictureBox2);
-            this.paso3.Controls.Add(this.guna2Panel3);
-            this.paso3.Controls.Add(this.textBoxCustom8);
-            this.paso3.Controls.Add(this.label12);
-            this.paso3.Controls.Add(this.guna2Panel2);
-            this.paso3.Controls.Add(this.guna2Panel1);
-            this.paso3.Controls.Add(this.roundButton3);
-            this.paso3.Controls.Add(this.roundButton5);
-            this.paso3.Controls.Add(this.label11);
-            this.paso3.Location = new System.Drawing.Point(746, 8);
-            this.paso3.Name = "paso3";
-            this.paso3.Size = new System.Drawing.Size(39, 18);
-            this.paso3.TabIndex = 43;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Inter SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Blue;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(149, 272);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(172, 24);
-            this.guna2HtmlLabel1.TabIndex = 49;
-            this.guna2HtmlLabel1.Text = "términos y condiciones ";
-            this.guna2HtmlLabel1.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
-            // 
-            // guna2CheckBox1
-            // 
-            this.guna2CheckBox1.Animated = true;
-            this.guna2CheckBox1.AutoSize = true;
-            this.guna2CheckBox1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.guna2CheckBox1.CheckedState.BorderColor = System.Drawing.Color.Black;
-            this.guna2CheckBox1.CheckedState.BorderRadius = 6;
-            this.guna2CheckBox1.CheckedState.BorderThickness = 2;
-            this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.Black;
-            this.guna2CheckBox1.CheckMarkColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2CheckBox1.Font = new System.Drawing.Font("Inter SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2CheckBox1.Location = new System.Drawing.Point(49, 272);
-            this.guna2CheckBox1.Name = "guna2CheckBox1";
-            this.guna2CheckBox1.Size = new System.Drawing.Size(557, 26);
-            this.guna2CheckBox1.TabIndex = 47;
-            this.guna2CheckBox1.Text = "Acepto los                                            del banco para la apertura " +
-    "de cuentas";
-            this.guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.Silver;
-            this.guna2CheckBox1.UncheckedState.BorderRadius = 6;
-            this.guna2CheckBox1.UncheckedState.BorderThickness = 2;
-            this.guna2CheckBox1.UncheckedState.FillColor = System.Drawing.Color.Silver;
-            this.guna2CheckBox1.CheckedChanged += new System.EventHandler(this.guna2CheckBox1_CheckedChanged);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::APP_BANK.Properties.Resources.currency_dollar;
-            this.pictureBox2.Location = new System.Drawing.Point(53, 224);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(17, 28);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 46;
-            this.pictureBox2.TabStop = false;
-            // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.BorderColor = System.Drawing.Color.Gray;
-            this.guna2Panel3.BorderRadius = 5;
-            this.guna2Panel3.BorderThickness = 1;
-            this.guna2Panel3.Controls.Add(this.guna2CustomRadioButton3);
-            this.guna2Panel3.Controls.Add(this.label20);
-            this.guna2Panel3.Controls.Add(this.label21);
-            this.guna2Panel3.Location = new System.Drawing.Point(42, 146);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(750, 48);
-            this.guna2Panel3.TabIndex = 45;
-            // 
-            // guna2CustomRadioButton3
-            // 
-            this.guna2CustomRadioButton3.Animated = true;
-            this.guna2CustomRadioButton3.CheckedState.BorderColor = System.Drawing.Color.Black;
-            this.guna2CustomRadioButton3.CheckedState.BorderThickness = 1;
-            this.guna2CustomRadioButton3.CheckedState.FillColor = System.Drawing.Color.Black;
-            this.guna2CustomRadioButton3.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2CustomRadioButton3.CheckedState.InnerOffset = 2;
-            this.guna2CustomRadioButton3.Location = new System.Drawing.Point(15, 15);
-            this.guna2CustomRadioButton3.Name = "guna2CustomRadioButton3";
-            this.guna2CustomRadioButton3.Size = new System.Drawing.Size(20, 20);
-            this.guna2CustomRadioButton3.TabIndex = 47;
-            this.guna2CustomRadioButton3.Text = "guna2CustomRadioButton3";
-            this.guna2CustomRadioButton3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CustomRadioButton3.UncheckedState.BorderThickness = 2;
-            this.guna2CustomRadioButton3.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CustomRadioButton3.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.guna2CustomRadioButton3.CheckedChanged += new System.EventHandler(this.guna2CustomRadioButton3_CheckedChanged);
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label20.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.label20.Location = new System.Drawing.Point(50, 25);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(183, 17);
-            this.label20.TabIndex = 43;
-            this.label20.Text = "Para inversiones a largo plazo";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label21.Font = new System.Drawing.Font("Inter SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(50, 7);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(134, 18);
-            this.label21.TabIndex = 43;
-            this.label21.Text = "Cuenta de inversión";
-            // 
-            // textBoxCustom8
-            // 
-            this.textBoxCustom8.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxCustom8.BorderColor = System.Drawing.Color.DimGray;
-            this.textBoxCustom8.BorderFocusColor = System.Drawing.Color.LightGray;
-            this.textBoxCustom8.BorderRadius = 6;
-            this.textBoxCustom8.BorderSize = 1;
-            this.textBoxCustom8.Font = new System.Drawing.Font("Inter SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCustom8.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBoxCustom8.Location = new System.Drawing.Point(43, 221);
-            this.textBoxCustom8.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.textBoxCustom8.Multiline = false;
-            this.textBoxCustom8.Name = "textBoxCustom8";
-            this.textBoxCustom8.Padding = new System.Windows.Forms.Padding(35, 7, 7, 7);
-            this.textBoxCustom8.PasswordChar = false;
-            this.textBoxCustom8.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.textBoxCustom8.PlaceholderText = "00.0";
-            this.textBoxCustom8.Size = new System.Drawing.Size(749, 33);
-            this.textBoxCustom8.TabIndex = 45;
-            this.textBoxCustom8.Texts = "";
-            this.textBoxCustom8.UnderlinedStyle = false;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Inter SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(46, 199);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(102, 18);
-            this.label12.TabIndex = 44;
-            this.label12.Text = "Depósito inicial";
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.BorderColor = System.Drawing.Color.Gray;
-            this.guna2Panel2.BorderRadius = 5;
-            this.guna2Panel2.BorderThickness = 1;
-            this.guna2Panel2.Controls.Add(this.guna2CustomRadioButton2);
-            this.guna2Panel2.Controls.Add(this.label18);
-            this.guna2Panel2.Controls.Add(this.label19);
-            this.guna2Panel2.Location = new System.Drawing.Point(42, 92);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(750, 48);
-            this.guna2Panel2.TabIndex = 44;
-            // 
-            // guna2CustomRadioButton2
-            // 
-            this.guna2CustomRadioButton2.Animated = true;
-            this.guna2CustomRadioButton2.CheckedState.BorderColor = System.Drawing.Color.Black;
-            this.guna2CustomRadioButton2.CheckedState.BorderThickness = 1;
-            this.guna2CustomRadioButton2.CheckedState.FillColor = System.Drawing.Color.Black;
-            this.guna2CustomRadioButton2.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2CustomRadioButton2.CheckedState.InnerOffset = 2;
-            this.guna2CustomRadioButton2.Location = new System.Drawing.Point(15, 14);
-            this.guna2CustomRadioButton2.Name = "guna2CustomRadioButton2";
-            this.guna2CustomRadioButton2.Size = new System.Drawing.Size(20, 20);
-            this.guna2CustomRadioButton2.TabIndex = 45;
-            this.guna2CustomRadioButton2.Text = "guna2CustomRadioButton2";
-            this.guna2CustomRadioButton2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CustomRadioButton2.UncheckedState.BorderThickness = 2;
-            this.guna2CustomRadioButton2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CustomRadioButton2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.guna2CustomRadioButton2.CheckedChanged += new System.EventHandler(this.guna2CustomRadioButton2_CheckedChanged);
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label18.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.label18.Location = new System.Drawing.Point(50, 25);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(179, 17);
-            this.label18.TabIndex = 43;
-            this.label18.Text = "Genera interes sobre tu saldo";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label19.Font = new System.Drawing.Font("Inter SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(50, 7);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(119, 18);
-            this.label19.TabIndex = 43;
-            this.label19.Text = "Cuenta de Ahorro";
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BorderColor = System.Drawing.Color.Gray;
-            this.guna2Panel1.BorderRadius = 5;
-            this.guna2Panel1.BorderThickness = 1;
-            this.guna2Panel1.Controls.Add(this.guna2CustomRadioButton1);
-            this.guna2Panel1.Controls.Add(this.label14);
-            this.guna2Panel1.Controls.Add(this.label13);
-            this.guna2Panel1.Location = new System.Drawing.Point(42, 38);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(750, 48);
-            this.guna2Panel1.TabIndex = 6;
-            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
-            // 
-            // guna2CustomRadioButton1
-            // 
-            this.guna2CustomRadioButton1.Animated = true;
-            this.guna2CustomRadioButton1.CheckedState.BorderColor = System.Drawing.Color.Black;
-            this.guna2CustomRadioButton1.CheckedState.BorderThickness = 1;
-            this.guna2CustomRadioButton1.CheckedState.FillColor = System.Drawing.Color.Black;
-            this.guna2CustomRadioButton1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2CustomRadioButton1.CheckedState.InnerOffset = 2;
-            this.guna2CustomRadioButton1.Location = new System.Drawing.Point(15, 13);
-            this.guna2CustomRadioButton1.Name = "guna2CustomRadioButton1";
-            this.guna2CustomRadioButton1.Size = new System.Drawing.Size(20, 20);
-            this.guna2CustomRadioButton1.TabIndex = 44;
-            this.guna2CustomRadioButton1.Text = "guna2CustomRadioButton1";
-            this.guna2CustomRadioButton1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CustomRadioButton1.UncheckedState.BorderThickness = 2;
-            this.guna2CustomRadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CustomRadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.guna2CustomRadioButton1.CheckedChanged += new System.EventHandler(this.guna2CustomRadioButton1_CheckedChanged);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label14.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.label14.Location = new System.Drawing.Point(50, 25);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(194, 17);
-            this.label14.TabIndex = 43;
-            this.label14.Text = "Ideal para transacciones diarias";
-            this.label14.Click += new System.EventHandler(this.label14_Click);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label13.Font = new System.Drawing.Font("Inter SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(50, 7);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(115, 18);
-            this.label13.TabIndex = 43;
-            this.label13.Text = "Cuenta corriente";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
-            // 
-            // roundButton3
-            // 
-            this.roundButton3.BackColor = System.Drawing.Color.Transparent;
-            this.roundButton3.BackgroundColor = System.Drawing.Color.Transparent;
-            this.roundButton3.BorderColor = System.Drawing.Color.Silver;
-            this.roundButton3.BorderRadius = 6;
-            this.roundButton3.BorderSize = 1;
-            this.roundButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundButton3.FlatAppearance.BorderSize = 0;
-            this.roundButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton3.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundButton3.ForeColor = System.Drawing.Color.Black;
-            this.roundButton3.Location = new System.Drawing.Point(75, 304);
-            this.roundButton3.Name = "roundButton3";
-            this.roundButton3.Size = new System.Drawing.Size(119, 39);
-            this.roundButton3.TabIndex = 42;
-            this.roundButton3.Text = "Anterior";
-            this.roundButton3.TextColor = System.Drawing.Color.Black;
-            this.roundButton3.UseVisualStyleBackColor = false;
-            this.roundButton3.Click += new System.EventHandler(this.roundButton3_Click);
-            // 
-            // roundButton5
-            // 
-            this.roundButton5.BackColor = System.Drawing.Color.DimGray;
-            this.roundButton5.BackgroundColor = System.Drawing.Color.DimGray;
-            this.roundButton5.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundButton5.BorderRadius = 6;
-            this.roundButton5.BorderSize = 0;
-            this.roundButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundButton5.FlatAppearance.BorderSize = 0;
-            this.roundButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton5.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundButton5.ForeColor = System.Drawing.Color.White;
-            this.roundButton5.Location = new System.Drawing.Point(661, 304);
-            this.roundButton5.Name = "roundButton5";
-            this.roundButton5.Size = new System.Drawing.Size(119, 39);
-            this.roundButton5.TabIndex = 40;
-            this.roundButton5.Text = "Continuar";
-            this.roundButton5.TextColor = System.Drawing.Color.White;
-            this.roundButton5.UseVisualStyleBackColor = false;
-            this.roundButton5.Click += new System.EventHandler(this.roundButton5_Click);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Font = new System.Drawing.Font("Inter SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(40, 15);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(102, 18);
-            this.label11.TabIndex = 39;
-            this.label11.Text = "Tipo de cuenta";
+            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox2.BorderColor = System.Drawing.Color.Silver;
+            this.guna2ComboBox2.BorderRadius = 5;
+            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox2.Font = new System.Drawing.Font("Inter SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.guna2ComboBox2.ItemHeight = 30;
+            this.guna2ComboBox2.Items.AddRange(new object[] {
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Azua",
+            "Bahoruco",
+            "Barahona",
+            "Dajabón",
+            "Distrito Nacional",
+            "Duarte",
+            "El Seibo",
+            "Elías Piña",
+            "Espaillat",
+            "Hato Mayor",
+            "Hermanas Mirabal",
+            "Independencia",
+            "La Altagracia",
+            "La Romana",
+            "La Vega",
+            "María Trinidad Sánchez",
+            "Monseñor Nouel",
+            "Monte Cristi",
+            "Monte Plata",
+            "Pedernales",
+            "Peravia",
+            "Puerto Plata",
+            "Samaná",
+            "San Cristóbal",
+            "San José de Ocoa",
+            "San Juan",
+            "San Pedro de Macorís",
+            "Sánchez Ramírez",
+            "Santiago",
+            "Santiago Rodríguez",
+            "Santo Domingo",
+            "Valverde"});
+            this.guna2ComboBox2.Location = new System.Drawing.Point(35, 254);
+            this.guna2ComboBox2.Name = "guna2ComboBox2";
+            this.guna2ComboBox2.Size = new System.Drawing.Size(757, 36);
+            this.guna2ComboBox2.Sorted = true;
+            this.guna2ComboBox2.StartIndex = 0;
+            this.guna2ComboBox2.TabIndex = 43;
+            this.guna2ComboBox2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
             // 
             // AperturaCuenta
             // 
@@ -969,11 +1030,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.Paso2.ResumeLayout(false);
-            this.Paso2.PerformLayout();
-            this.paso1.ResumeLayout(false);
-            this.paso1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.paso3.ResumeLayout(false);
             this.paso3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -983,6 +1039,11 @@
             this.guna2Panel2.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            this.Paso2.ResumeLayout(false);
+            this.Paso2.PerformLayout();
+            this.paso1.ResumeLayout(false);
+            this.paso1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1014,7 +1075,6 @@
         private TextBoxCustom textBoxCustom7;
         private APP_BANCO.RoundButton roundButton1;
         private System.Windows.Forms.Label label7;
-        private TextBoxCustom textBoxCustom4;
         private System.Windows.Forms.Label label8;
         private TextBoxCustom textBoxCustom5;
         private System.Windows.Forms.Label label9;
@@ -1044,5 +1104,6 @@
         private Guna.UI2.WinForms.Guna2CustomRadioButton guna2CustomRadioButton3;
         private Guna.UI2.WinForms.Guna2CustomRadioButton guna2CustomRadioButton2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
     }
 }

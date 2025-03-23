@@ -22,17 +22,83 @@ namespace APP_BANK.ServicioAlCliente
             
         }
 
-        public void MoverFormulario()
+        public void MoverFormulariom()
         {
-            
+            ButtonGC.BackColor = Color.Black;
+            ButtonGC.ForeColor = Color.White;
+            PictuConfig.BackColor = Color.Black;
+            PictuConfig.Image = Properties.Resources.user_gear_write;
+
+            // Restablecer estilos de los otros botones
+            PictuHouse.Image = Properties.Resources.house;
+            PictuHouse.BackColor = Color.White;
+            buttonHouse.BackColor = Color.White;
+            buttonHouse.ForeColor = Color.Black;
+
+            PictuPlus.Image = Properties.Resources.user_plus_black;
+            PictuPlus.BackColor = Color.White;
+            ButtonAC.BackColor = Color.White;
+            ButtonAC.ForeColor = Color.Black;
+
+            PictuWarning.Image = Properties.Resources.warning_black;
+            PictuWarning.BackColor = Color.White;
+            ButtonHistorial.BackColor = Color.White;
+            ButtonHistorial.ForeColor = Color.Black;
+
+            AbrirFromMadre(new ServicioAlCliente.GestionCliente());
+
+
+
+
         }
         public void MoverFormulario2()
         {
+            ButtonAC.BackColor = Color.Black;
+            ButtonAC.ForeColor = Color.White;
+            PictuPlus.BackColor = Color.Black;
+            PictuPlus.Image = Properties.Resources.user_plus_white;
 
+            // Restablecer estilos de los otros botones
+            PictuHouse.Image = Properties.Resources.house;
+            PictuHouse.BackColor = Color.White;
+            buttonHouse.BackColor = Color.White;
+            buttonHouse.ForeColor = Color.Black;
+
+            PictuConfig.Image = Properties.Resources.user_gear_black;
+            PictuConfig.BackColor = Color.White;
+            ButtonGC.BackColor = Color.White;
+            ButtonGC.ForeColor = Color.Black;
+
+            PictuWarning.Image = Properties.Resources.warning_black;
+            PictuWarning.BackColor = Color.White;
+            ButtonHistorial.BackColor = Color.White;
+            ButtonHistorial.ForeColor = Color.Black;
+
+
+            AbrirFromMadre(new AperturaCuenta());
         }
         public void MoverFormulario3()
         {
+            ButtonHistorial.BackColor = Color.Black;
+            ButtonHistorial.ForeColor = Color.White;
+            PictuWarning.BackColor = Color.Black;
+            PictuWarning.Image = Properties.Resources.warning_white;
 
+            // Restablecer estilos de los otros botones
+            PictuHouse.Image = Properties.Resources.house;
+            PictuHouse.BackColor = Color.White;
+            buttonHouse.BackColor = Color.White;
+            buttonHouse.ForeColor = Color.Black;
+
+            PictuConfig.Image = Properties.Resources.user_gear_black;
+            PictuConfig.BackColor = Color.White;
+            ButtonGC.BackColor = Color.White;
+            ButtonGC.ForeColor = Color.Black;
+
+            PictuPlus.Image = Properties.Resources.user_plus_black;
+            PictuPlus.BackColor = Color.White;
+            ButtonAC.BackColor = Color.White;
+            ButtonAC.ForeColor = Color.Black;
         }
 
 
@@ -149,7 +215,7 @@ namespace APP_BANK.ServicioAlCliente
             ButtonHistorial.BackColor = Color.White;
             ButtonHistorial.ForeColor = Color.Black;
 
-            
+
             AbrirFromMadre(new AperturaCuenta());
         }
 
@@ -176,7 +242,7 @@ namespace APP_BANK.ServicioAlCliente
             ButtonHistorial.BackColor = Color.White;
             ButtonHistorial.ForeColor = Color.Black;
 
-            AbrirFromMadre(new InicioSC());
+            AbrirFromMadreD(new InicioSC(this));
         }
         private void AbrirFromMadreInicio(object formhija)
         {

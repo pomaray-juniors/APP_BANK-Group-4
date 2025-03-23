@@ -155,6 +155,8 @@
             this.textBoxCustom3.TabIndex = 14;
             this.textBoxCustom3.Texts = "";
             this.textBoxCustom3.UnderlinedStyle = false;
+            this.textBoxCustom3._TextChanged += new System.EventHandler(this.textBoxCustom3__TextChanged);
+            this.textBoxCustom3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCustom3_KeyPress);
             // 
             // label5
             // 
