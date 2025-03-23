@@ -105,8 +105,8 @@
             // 
             // roundButton9
             // 
-            this.roundButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(51)))), ((int)(((byte)(234)))));
-            this.roundButton9.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(51)))), ((int)(((byte)(234)))));
+            this.roundButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(119)))), ((int)(((byte)(6)))));
+            this.roundButton9.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(119)))), ((int)(((byte)(6)))));
             this.roundButton9.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.roundButton9.BorderRadius = 6;
             this.roundButton9.BorderSize = 0;
@@ -122,6 +122,7 @@
             this.roundButton9.Text = "Realizar";
             this.roundButton9.TextColor = System.Drawing.Color.White;
             this.roundButton9.UseVisualStyleBackColor = false;
+            this.roundButton9.Click += new System.EventHandler(this.roundButton9_Click);
             // 
             // pictureBox4
             // 
@@ -165,6 +166,7 @@
             this.roundButton17.Text = "Realizar";
             this.roundButton17.TextColor = System.Drawing.Color.White;
             this.roundButton17.UseVisualStyleBackColor = false;
+            this.roundButton17.Click += new System.EventHandler(this.roundButton17_Click);
             // 
             // pictureBox6
             // 
@@ -227,6 +229,7 @@
             this.roundButton10.Text = "Realizar";
             this.roundButton10.TextColor = System.Drawing.Color.White;
             this.roundButton10.UseVisualStyleBackColor = false;
+            this.roundButton10.Click += new System.EventHandler(this.roundButton10_Click);
             // 
             // pictureBox5
             // 

@@ -18,7 +18,7 @@ namespace APP_BANK
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new homeServicioCliente());
+            Application.Run(new homeCajero());
         }
     }
 }

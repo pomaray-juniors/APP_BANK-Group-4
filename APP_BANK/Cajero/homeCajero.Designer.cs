@@ -133,8 +133,8 @@
             this.roundButton16.TextColor = System.Drawing.Color.Black;
             this.roundButton16.UseVisualStyleBackColor = false;
             this.roundButton16.Click += new System.EventHandler(this.roundButton16_Click_1);
-            this.roundButton16.MouseEnter += new System.EventHandler(this.roundButton_MouseEnter);
-            this.roundButton16.MouseLeave += new System.EventHandler(this.roundButton_MouseLeave);
+            this.roundButton16.MouseEnter += new System.EventHandler(this.roundButton16_MouseEnter);
+            this.roundButton16.MouseLeave += new System.EventHandler(this.roundButton16_MouseLeave);
             // 
             // pictureBox10
             // 
@@ -173,8 +173,8 @@
             this.roundButton15.TextColor = System.Drawing.Color.Black;
             this.roundButton15.UseVisualStyleBackColor = false;
             this.roundButton15.Click += new System.EventHandler(this.roundButton15_Click);
-            this.roundButton15.MouseEnter += new System.EventHandler(this.roundButton_MouseEnter);
-            this.roundButton15.MouseLeave += new System.EventHandler(this.roundButton_MouseLeave);
+            this.roundButton15.MouseEnter += new System.EventHandler(this.roundButton15_MouseEnter);
+            this.roundButton15.MouseLeave += new System.EventHandler(this.roundButton15_MouseLeave);
             // 
             // pictureBox9
             // 
@@ -213,8 +213,8 @@
             this.roundButton14.TextColor = System.Drawing.Color.Black;
             this.roundButton14.UseVisualStyleBackColor = false;
             this.roundButton14.Click += new System.EventHandler(this.roundButton14_Click_1);
-            this.roundButton14.MouseEnter += new System.EventHandler(this.roundButton_MouseEnter);
-            this.roundButton14.MouseLeave += new System.EventHandler(this.roundButton_MouseLeave);
+            this.roundButton14.MouseEnter += new System.EventHandler(this.roundButton14_MouseEnter);
+            this.roundButton14.MouseLeave += new System.EventHandler(this.roundButton14_MouseLeave);
             // 
             // pictureBox8
             // 
@@ -253,8 +253,8 @@
             this.roundButton13.TextColor = System.Drawing.Color.Black;
             this.roundButton13.UseVisualStyleBackColor = false;
             this.roundButton13.Click += new System.EventHandler(this.roundButton13_Click_1);
-            this.roundButton13.MouseEnter += new System.EventHandler(this.roundButton_MouseEnter);
-            this.roundButton13.MouseLeave += new System.EventHandler(this.roundButton_MouseLeave);
+            this.roundButton13.MouseEnter += new System.EventHandler(this.roundButton13_MouseEnter);
+            this.roundButton13.MouseLeave += new System.EventHandler(this.roundButton13_MouseLeave);
             // 
             // pictureBox7
             // 
@@ -293,8 +293,8 @@
             this.roundButton12.TextColor = System.Drawing.Color.Black;
             this.roundButton12.UseVisualStyleBackColor = false;
             this.roundButton12.Click += new System.EventHandler(this.roundButton12_Click);
-            this.roundButton12.MouseEnter += new System.EventHandler(this.roundButton_MouseEnter);
-            this.roundButton12.MouseLeave += new System.EventHandler(this.roundButton_MouseLeave);
+            this.roundButton12.MouseEnter += new System.EventHandler(this.roundButton12_MouseEnter);
+            this.roundButton12.MouseLeave += new System.EventHandler(this.roundButton12_MouseLeave);
             // 
             // pictureBox6
             // 
@@ -333,8 +333,8 @@
             this.roundButton11.TextColor = System.Drawing.Color.White;
             this.roundButton11.UseVisualStyleBackColor = false;
             this.roundButton11.Click += new System.EventHandler(this.roundButton11_Click);
-            this.roundButton11.MouseEnter += new System.EventHandler(this.roundButton_MouseEnter);
-            this.roundButton11.MouseLeave += new System.EventHandler(this.roundButton_MouseLeave);
+            this.roundButton11.MouseEnter += new System.EventHandler(this.roundButton11_MouseEnter);
+            this.roundButton11.MouseLeave += new System.EventHandler(this.roundButton11_MouseLeave);
             // 
             // roundButton3
             // 

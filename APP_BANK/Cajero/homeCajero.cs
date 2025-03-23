@@ -221,8 +221,6 @@ namespace APP_BANK.Cajero
 
         private void roundButton12_Click(object sender, EventArgs e)
         {
-
-
             roundButton11.BackColor = Color.FromArgb(0, 0, 255, 255);
             roundButton12.BackColor = Color.Black;
             roundButton13.BackColor = Color.FromArgb(0, 0, 255, 255);
@@ -236,8 +234,6 @@ namespace APP_BANK.Cajero
             roundButton14.ForeColor = Color.Black;
             roundButton15.ForeColor = Color.Black;
             roundButton16.ForeColor = Color.Black;
-
-            AbrirFromMadre(new Cajero.Transferencias());
 
             pictureBox6.Image = Properties.Resources.house_black;
             pictureBox6.BackColor = Color.White;
@@ -256,9 +252,12 @@ namespace APP_BANK.Cajero
 
             pictureBox11.Image = Properties.Resources.clock;
             pictureBox11.BackColor = Color.White;
+
+            AbrirFromMadre(new Cajero.Transferencias());
         }
 
-       
+
+
 
         private void roundButton11_Click(object sender, EventArgs e)
         {
@@ -275,7 +274,6 @@ namespace APP_BANK.Cajero
             roundButton14.ForeColor = Color.Black;
             roundButton15.ForeColor = Color.Black;
             roundButton16.ForeColor = Color.Black;
-
 
             pictureBox6.Image = Properties.Resources.house_white;
             pictureBox6.BackColor = Color.Black;
@@ -296,9 +294,8 @@ namespace APP_BANK.Cajero
             pictureBox11.BackColor = Color.White;
 
             AbrirFromMadreD(new PanelControl(this));
-
-
         }
+
 
         private void button13()
         {
@@ -353,8 +350,6 @@ namespace APP_BANK.Cajero
             roundButton15.ForeColor = Color.Black;
             roundButton16.ForeColor = Color.Black;
 
-            AbrirFromMadre(new Cajero.Deposito());
-
             pictureBox6.Image = Properties.Resources.house_black;
             pictureBox6.BackColor = Color.White;
 
@@ -372,7 +367,10 @@ namespace APP_BANK.Cajero
 
             pictureBox11.Image = Properties.Resources.clock;
             pictureBox11.BackColor = Color.White;
+
+            AbrirFromMadre(new Cajero.Deposito());
         }
+
 
         private void button14()
         {
@@ -428,8 +426,6 @@ namespace APP_BANK.Cajero
             roundButton15.ForeColor = Color.Black;
             roundButton16.ForeColor = Color.Black;
 
-            AbrirFromMadre(new Cajero.Retiros());
-
             pictureBox6.Image = Properties.Resources.house_black;
             pictureBox6.BackColor = Color.White;
 
@@ -447,6 +443,8 @@ namespace APP_BANK.Cajero
 
             pictureBox11.Image = Properties.Resources.clock;
             pictureBox11.BackColor = Color.White;
+
+            AbrirFromMadre(new Cajero.Retiros());
         }
 
 
@@ -466,8 +464,6 @@ namespace APP_BANK.Cajero
             roundButton15.ForeColor = Color.White;
             roundButton16.ForeColor = Color.Black;
 
-            AbrirFromMadre(new Cajero.BusquedaCliente());
-
             pictureBox6.Image = Properties.Resources.house_black;
             pictureBox6.BackColor = Color.White;
 
@@ -485,12 +481,13 @@ namespace APP_BANK.Cajero
 
             pictureBox11.Image = Properties.Resources.clock;
             pictureBox11.BackColor = Color.White;
+
+            AbrirFromMadre(new Cajero.BusquedaCliente());
         }
+
 
         private void roundButton16_Click_1(object sender, EventArgs e)
         {
-            
-
             roundButton11.BackColor = Color.FromArgb(0, 0, 255, 255);
             roundButton12.BackColor = Color.FromArgb(0, 0, 255, 255);
             roundButton13.BackColor = Color.FromArgb(0, 0, 255, 255);
@@ -523,6 +520,7 @@ namespace APP_BANK.Cajero
             pictureBox11.Image = Properties.Resources.clock_white;
             pictureBox11.BackColor = Color.Black;
         }
+
 
 
 
@@ -573,5 +571,140 @@ namespace APP_BANK.Cajero
         {
 
         }
+
+        // Botón 1: Inicio - Asociado a pictureBox6
+        private void roundButton11_MouseEnter(object sender, EventArgs e)
+        {
+            if (roundButton11.BackColor != Color.Black)
+            {
+                roundButton11.ForeColor = Color.White;
+                pictureBox6.Image = Properties.Resources.house_white;
+                pictureBox6.BackColor = Color.Black;
+            }
+        }
+
+        private void roundButton11_MouseLeave(object sender, EventArgs e)
+        {
+            if (roundButton11.BackColor != Color.Black)
+            {
+                roundButton11.ForeColor = Color.Black;
+                pictureBox6.Image = Properties.Resources.house_black;
+                pictureBox6.BackColor = Color.White;
+            }
+        }
+
+        // Botón 2: Transferencias - Asociado a pictureBox7
+        private void roundButton12_MouseEnter(object sender, EventArgs e)
+        {
+            if (roundButton12.BackColor != Color.Black)
+            {
+                roundButton12.ForeColor = Color.White;
+                // Usamos la imagen de hover (en este ejemplo "bold") para mostrar la versión blanca
+                pictureBox7.Image = Properties.Resources.arrows_left_right_bold;
+                pictureBox7.BackColor = Color.Black;
+            }
+        }
+
+        private void roundButton12_MouseLeave(object sender, EventArgs e)
+        {
+            if (roundButton12.BackColor != Color.Black)
+            {
+                roundButton12.ForeColor = Color.Black;
+                pictureBox7.Image = Properties.Resources.arrows_left_right_black;
+                pictureBox7.BackColor = Color.White;
+            }
+        }
+
+        // Botón 3: Depósito - Asociado a pictureBox8
+        private void roundButton13_MouseEnter(object sender, EventArgs e)
+        {
+            if (roundButton13.BackColor != Color.Black)
+            {
+                roundButton13.ForeColor = Color.White;
+                pictureBox8.Image = Properties.Resources.arrow_down_white;
+                pictureBox8.BackColor = Color.Black;
+            }
+        }
+
+        private void roundButton13_MouseLeave(object sender, EventArgs e)
+        {
+            if (roundButton13.BackColor != Color.Black)
+            {
+                roundButton13.ForeColor = Color.Black;
+                pictureBox8.Image = Properties.Resources.arrow_down;
+                pictureBox8.BackColor = Color.White;
+            }
+        }
+
+        // Botón 4: Retiro - Asociado a pictureBox9
+        private void roundButton14_MouseEnter(object sender, EventArgs e)
+        {
+            if (roundButton14.BackColor != Color.Black)
+            {
+                roundButton14.ForeColor = Color.White;
+                pictureBox9.Image = Properties.Resources.arrow_up_white;
+                pictureBox9.BackColor = Color.Black;
+            }
+        }
+
+        private void roundButton14_MouseLeave(object sender, EventArgs e)
+        {
+            if (roundButton14.BackColor != Color.Black)
+            {
+                roundButton14.ForeColor = Color.Black;
+                pictureBox9.Image = Properties.Resources.arrow_up;
+                pictureBox9.BackColor = Color.White;
+            }
+        }
+
+        // Botón 5: Consulta Cuenta - Asociado a pictureBox10
+        private void roundButton15_MouseEnter(object sender, EventArgs e)
+        {
+            if (roundButton15.BackColor != Color.Black)
+            {
+                roundButton15.ForeColor = Color.White;
+                pictureBox10.Image = Properties.Resources.magnifying_glass_white;
+                pictureBox10.BackColor = Color.Black;
+            }
+        }
+
+        private void roundButton15_MouseLeave(object sender, EventArgs e)
+        {
+            if (roundButton15.BackColor != Color.Black)
+            {
+                roundButton15.ForeColor = Color.Black;
+                pictureBox10.Image = Properties.Resources.magnifying_glass;
+                pictureBox10.BackColor = Color.White;
+            }
+        }
+
+        // Botón 6: Historial - Asociado a pictureBox11
+        private void roundButton16_MouseEnter(object sender, EventArgs e)
+        {
+            if (roundButton16.BackColor != Color.Black)
+            {
+                roundButton16.ForeColor = Color.White;
+                pictureBox11.Image = Properties.Resources.clock_white;
+                pictureBox11.BackColor = Color.Black;
+            }
+        }
+
+        private void roundButton16_MouseLeave(object sender, EventArgs e)
+        {
+            if (roundButton16.BackColor != Color.Black)
+            {
+                roundButton16.ForeColor = Color.Black;
+                // En este caso, la imagen por defecto es clock, según tu código en el Click
+                pictureBox11.Image = Properties.Resources.clock;
+                pictureBox11.BackColor = Color.White;
+            }
+        }
+
+
+
+
+
+
+
     }
 }

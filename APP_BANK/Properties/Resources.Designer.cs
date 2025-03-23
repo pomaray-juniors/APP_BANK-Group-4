@@ -403,6 +403,26 @@ namespace APP_BANK.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap user_gear_write {
+            get {
+                object obj = ResourceManager.GetObject("user-gear-write", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_gear_write1 {
+            get {
+                object obj = ResourceManager.GetObject("user-gear-write1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap user_grey {
             get {
                 object obj = ResourceManager.GetObject("user-grey", resourceCulture);
@@ -453,6 +473,16 @@ namespace APP_BANK.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap user_plus_white {
+            get {
+                object obj = ResourceManager.GetObject("user-plus-white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap user1 {
             get {
                 object obj = ResourceManager.GetObject("user1", resourceCulture);
@@ -486,6 +516,16 @@ namespace APP_BANK.Properties {
         internal static System.Drawing.Bitmap warning_black {
             get {
                 object obj = ResourceManager.GetObject("warning-black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap warning_white {
+            get {
+                object obj = ResourceManager.GetObject("warning-white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

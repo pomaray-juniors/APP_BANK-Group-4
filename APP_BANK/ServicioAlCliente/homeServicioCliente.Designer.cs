@@ -30,31 +30,31 @@
         {
             this.contenedor_f = new System.Windows.Forms.Panel();
             this.contenedor = new System.Windows.Forms.Panel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.PictuWarning = new System.Windows.Forms.PictureBox();
+            this.ButtonHistorial = new APP_BANCO.RoundButton();
+            this.PictuPlus = new System.Windows.Forms.PictureBox();
+            this.ButtonAC = new APP_BANCO.RoundButton();
+            this.PictuConfig = new System.Windows.Forms.PictureBox();
             this.contenedor_paneles = new System.Windows.Forms.Panel();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.PictuHouse = new System.Windows.Forms.PictureBox();
+            this.buttonHouse = new APP_BANCO.RoundButton();
+            this.ButtonGC = new APP_BANCO.RoundButton();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.roundButton2 = new APP_BANCO.RoundButton();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.roundButton7 = new APP_BANCO.RoundButton();
-            this.roundButton6 = new APP_BANCO.RoundButton();
-            this.roundButton11 = new APP_BANCO.RoundButton();
-            this.roundButton5 = new APP_BANCO.RoundButton();
-            this.roundButton2 = new APP_BANCO.RoundButton();
             this.roundButton1 = new APP_BANCO.RoundButton();
             this.roundButton3 = new APP_BANCO.RoundButton();
             this.contenedor_f.SuspendLayout();
             this.contenedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictuWarning)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictuPlus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictuConfig)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictuHouse)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // contenedor_f
@@ -70,57 +70,116 @@
             // contenedor
             // 
             this.contenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.contenedor.Controls.Add(this.pictureBox9);
-            this.contenedor.Controls.Add(this.roundButton7);
-            this.contenedor.Controls.Add(this.pictureBox8);
-            this.contenedor.Controls.Add(this.roundButton6);
-            this.contenedor.Controls.Add(this.pictureBox7);
+            this.contenedor.Controls.Add(this.PictuWarning);
+            this.contenedor.Controls.Add(this.ButtonHistorial);
+            this.contenedor.Controls.Add(this.PictuPlus);
+            this.contenedor.Controls.Add(this.ButtonAC);
+            this.contenedor.Controls.Add(this.PictuConfig);
             this.contenedor.Controls.Add(this.contenedor_paneles);
-            this.contenedor.Controls.Add(this.pictureBox10);
-            this.contenedor.Controls.Add(this.roundButton11);
-            this.contenedor.Controls.Add(this.roundButton5);
+            this.contenedor.Controls.Add(this.PictuHouse);
+            this.contenedor.Controls.Add(this.buttonHouse);
+            this.contenedor.Controls.Add(this.ButtonGC);
             this.contenedor.Controls.Add(this.panel3);
             this.contenedor.Controls.Add(this.roundButton3);
             this.contenedor.Location = new System.Drawing.Point(3, 3);
             this.contenedor.Name = "contenedor";
             this.contenedor.Size = new System.Drawing.Size(1245, 696);
             this.contenedor.TabIndex = 0;
+            this.contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.contenedor_Paint);
             // 
-            // pictureBox9
+            // PictuWarning
             // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox9.Image = global::APP_BANK.Properties.Resources.warning_black;
-            this.pictureBox9.Location = new System.Drawing.Point(79, 253);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 77;
-            this.pictureBox9.TabStop = false;
+            this.PictuWarning.BackColor = System.Drawing.Color.Transparent;
+            this.PictuWarning.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PictuWarning.Image = global::APP_BANK.Properties.Resources.warning_black;
+            this.PictuWarning.Location = new System.Drawing.Point(79, 253);
+            this.PictuWarning.Name = "PictuWarning";
+            this.PictuWarning.Size = new System.Drawing.Size(26, 26);
+            this.PictuWarning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictuWarning.TabIndex = 77;
+            this.PictuWarning.TabStop = false;
             // 
-            // pictureBox8
+            // ButtonHistorial
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Image = global::APP_BANK.Properties.Resources.user_plus_black;
-            this.pictureBox8.Location = new System.Drawing.Point(79, 207);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 75;
-            this.pictureBox8.TabStop = false;
+            this.ButtonHistorial.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonHistorial.BackgroundColor = System.Drawing.Color.Transparent;
+            this.ButtonHistorial.BorderColor = System.Drawing.Color.Gray;
+            this.ButtonHistorial.BorderRadius = 10;
+            this.ButtonHistorial.BorderSize = 1;
+            this.ButtonHistorial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonHistorial.FlatAppearance.BorderSize = 0;
+            this.ButtonHistorial.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.ButtonHistorial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.ButtonHistorial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.ButtonHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonHistorial.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonHistorial.ForeColor = System.Drawing.Color.Black;
+            this.ButtonHistorial.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtonHistorial.Location = new System.Drawing.Point(63, 245);
+            this.ButtonHistorial.Name = "ButtonHistorial";
+            this.ButtonHistorial.Padding = new System.Windows.Forms.Padding(0, 0, 40, 0);
+            this.ButtonHistorial.Size = new System.Drawing.Size(210, 40);
+            this.ButtonHistorial.TabIndex = 76;
+            this.ButtonHistorial.Text = "Historial";
+            this.ButtonHistorial.TextColor = System.Drawing.Color.Black;
+            this.ButtonHistorial.UseVisualStyleBackColor = false;
+            this.ButtonHistorial.Click += new System.EventHandler(this.ButtonHistorial_Click);
+            this.ButtonHistorial.MouseEnter += new System.EventHandler(this.Button_MouseEnter);
+            this.ButtonHistorial.MouseLeave += new System.EventHandler(this.Button_MouseLeave);
             // 
-            // pictureBox7
+            // PictuPlus
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox7.Image = global::APP_BANK.Properties.Resources.user_gear_black;
-            this.pictureBox7.Location = new System.Drawing.Point(79, 159);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 73;
-            this.pictureBox7.TabStop = false;
+            this.PictuPlus.BackColor = System.Drawing.Color.Transparent;
+            this.PictuPlus.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PictuPlus.Image = global::APP_BANK.Properties.Resources.user_plus_black;
+            this.PictuPlus.Location = new System.Drawing.Point(79, 207);
+            this.PictuPlus.Name = "PictuPlus";
+            this.PictuPlus.Size = new System.Drawing.Size(26, 26);
+            this.PictuPlus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictuPlus.TabIndex = 75;
+            this.PictuPlus.TabStop = false;
+            this.PictuPlus.Click += new System.EventHandler(this.roundButton6_Click_1);
+            // 
+            // ButtonAC
+            // 
+            this.ButtonAC.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonAC.BackgroundColor = System.Drawing.Color.Transparent;
+            this.ButtonAC.BorderColor = System.Drawing.Color.Gray;
+            this.ButtonAC.BorderRadius = 10;
+            this.ButtonAC.BorderSize = 1;
+            this.ButtonAC.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonAC.FlatAppearance.BorderSize = 0;
+            this.ButtonAC.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.ButtonAC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.ButtonAC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.ButtonAC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonAC.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonAC.ForeColor = System.Drawing.Color.Black;
+            this.ButtonAC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtonAC.Location = new System.Drawing.Point(63, 199);
+            this.ButtonAC.Name = "ButtonAC";
+            this.ButtonAC.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.ButtonAC.Size = new System.Drawing.Size(210, 40);
+            this.ButtonAC.TabIndex = 74;
+            this.ButtonAC.Text = "Apertura de la cuenta";
+            this.ButtonAC.TextColor = System.Drawing.Color.Black;
+            this.ButtonAC.UseVisualStyleBackColor = false;
+            this.ButtonAC.Click += new System.EventHandler(this.roundButton6_Click_1);
+            this.ButtonAC.MouseEnter += new System.EventHandler(this.Button_MouseEnter);
+            this.ButtonAC.MouseLeave += new System.EventHandler(this.Button_MouseLeave);
+            // 
+            // PictuConfig
+            // 
+            this.PictuConfig.BackColor = System.Drawing.Color.Transparent;
+            this.PictuConfig.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PictuConfig.Image = global::APP_BANK.Properties.Resources.user_gear_black;
+            this.PictuConfig.Location = new System.Drawing.Point(79, 159);
+            this.PictuConfig.Name = "PictuConfig";
+            this.PictuConfig.Size = new System.Drawing.Size(26, 26);
+            this.PictuConfig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictuConfig.TabIndex = 73;
+            this.PictuConfig.TabStop = false;
+            this.PictuConfig.Click += new System.EventHandler(this.roundButton5_Click);
             // 
             // contenedor_paneles
             // 
@@ -129,17 +188,74 @@
             this.contenedor_paneles.Size = new System.Drawing.Size(922, 571);
             this.contenedor_paneles.TabIndex = 56;
             // 
-            // pictureBox10
+            // PictuHouse
             // 
-            this.pictureBox10.BackColor = System.Drawing.Color.Black;
-            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox10.Image = global::APP_BANK.Properties.Resources.house_white;
-            this.pictureBox10.Location = new System.Drawing.Point(77, 113);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 65;
-            this.pictureBox10.TabStop = false;
+            this.PictuHouse.BackColor = System.Drawing.Color.Black;
+            this.PictuHouse.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PictuHouse.Image = global::APP_BANK.Properties.Resources.house_white;
+            this.PictuHouse.Location = new System.Drawing.Point(77, 113);
+            this.PictuHouse.Name = "PictuHouse";
+            this.PictuHouse.Size = new System.Drawing.Size(26, 26);
+            this.PictuHouse.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictuHouse.TabIndex = 65;
+            this.PictuHouse.TabStop = false;
+            this.PictuHouse.Click += new System.EventHandler(this.roundButton11_Click);
+            // 
+            // buttonHouse
+            // 
+            this.buttonHouse.BackColor = System.Drawing.Color.Black;
+            this.buttonHouse.BackgroundColor = System.Drawing.Color.Black;
+            this.buttonHouse.BorderColor = System.Drawing.Color.Gray;
+            this.buttonHouse.BorderRadius = 10;
+            this.buttonHouse.BorderSize = 1;
+            this.buttonHouse.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonHouse.FlatAppearance.BorderSize = 0;
+            this.buttonHouse.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.buttonHouse.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.buttonHouse.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.buttonHouse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHouse.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHouse.ForeColor = System.Drawing.Color.White;
+            this.buttonHouse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonHouse.Location = new System.Drawing.Point(63, 105);
+            this.buttonHouse.Name = "buttonHouse";
+            this.buttonHouse.Padding = new System.Windows.Forms.Padding(0, 0, 50, 0);
+            this.buttonHouse.Size = new System.Drawing.Size(210, 40);
+            this.buttonHouse.TabIndex = 56;
+            this.buttonHouse.Text = "Inicio";
+            this.buttonHouse.TextColor = System.Drawing.Color.White;
+            this.buttonHouse.UseVisualStyleBackColor = false;
+            this.buttonHouse.Click += new System.EventHandler(this.roundButton11_Click);
+            this.buttonHouse.MouseEnter += new System.EventHandler(this.Button_MouseEnter);
+            this.buttonHouse.MouseLeave += new System.EventHandler(this.Button_MouseLeave);
+            // 
+            // ButtonGC
+            // 
+            this.ButtonGC.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonGC.BackgroundColor = System.Drawing.Color.Transparent;
+            this.ButtonGC.BorderColor = System.Drawing.Color.Gray;
+            this.ButtonGC.BorderRadius = 10;
+            this.ButtonGC.BorderSize = 1;
+            this.ButtonGC.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonGC.FlatAppearance.BorderSize = 0;
+            this.ButtonGC.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.ButtonGC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.ButtonGC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.ButtonGC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonGC.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonGC.ForeColor = System.Drawing.Color.Black;
+            this.ButtonGC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtonGC.Location = new System.Drawing.Point(63, 151);
+            this.ButtonGC.Name = "ButtonGC";
+            this.ButtonGC.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
+            this.ButtonGC.Size = new System.Drawing.Size(210, 40);
+            this.ButtonGC.TabIndex = 69;
+            this.ButtonGC.Text = "Gestion de Clientes";
+            this.ButtonGC.TextColor = System.Drawing.Color.Black;
+            this.ButtonGC.UseVisualStyleBackColor = false;
+            this.ButtonGC.Click += new System.EventHandler(this.roundButton5_Click);
+            this.ButtonGC.MouseEnter += new System.EventHandler(this.Button_MouseEnter);
+            this.ButtonGC.MouseLeave += new System.EventHandler(this.Button_MouseLeave);
             // 
             // panel3
             // 
@@ -154,6 +270,42 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1245, 65);
             this.panel3.TabIndex = 1;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::APP_BANK.Properties.Resources.sign_out;
+            this.pictureBox2.Location = new System.Drawing.Point(1146, 15);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(26, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
+            // roundButton2
+            // 
+            this.roundButton2.BackColor = System.Drawing.Color.Transparent;
+            this.roundButton2.BackgroundColor = System.Drawing.Color.Transparent;
+            this.roundButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.roundButton2.BorderRadius = 8;
+            this.roundButton2.BorderSize = 1;
+            this.roundButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundButton2.FlatAppearance.BorderSize = 0;
+            this.roundButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.roundButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.WhiteSmoke;
+            this.roundButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundButton2.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundButton2.ForeColor = System.Drawing.Color.Black;
+            this.roundButton2.Location = new System.Drawing.Point(1139, 11);
+            this.roundButton2.Name = "roundButton2";
+            this.roundButton2.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.roundButton2.Size = new System.Drawing.Size(97, 40);
+            this.roundButton2.TabIndex = 4;
+            this.roundButton2.Text = "Salir";
+            this.roundButton2.TextColor = System.Drawing.Color.Black;
+            this.roundButton2.UseVisualStyleBackColor = false;
+            this.roundButton2.Click += new System.EventHandler(this.roundButton2_Click);
             // 
             // label1
             // 
@@ -175,145 +327,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::APP_BANK.Properties.Resources.sign_out;
-            this.pictureBox2.Location = new System.Drawing.Point(1146, 15);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(26, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
-            // roundButton7
-            // 
-            this.roundButton7.BackColor = System.Drawing.Color.Transparent;
-            this.roundButton7.BackgroundColor = System.Drawing.Color.Transparent;
-            this.roundButton7.BorderColor = System.Drawing.Color.Gray;
-            this.roundButton7.BorderRadius = 10;
-            this.roundButton7.BorderSize = 1;
-            this.roundButton7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundButton7.FlatAppearance.BorderSize = 0;
-            this.roundButton7.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.roundButton7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.roundButton7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.roundButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton7.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundButton7.ForeColor = System.Drawing.Color.Black;
-            this.roundButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.roundButton7.Location = new System.Drawing.Point(63, 245);
-            this.roundButton7.Name = "roundButton7";
-            this.roundButton7.Padding = new System.Windows.Forms.Padding(0, 0, 40, 0);
-            this.roundButton7.Size = new System.Drawing.Size(210, 40);
-            this.roundButton7.TabIndex = 76;
-            this.roundButton7.Text = "Historial";
-            this.roundButton7.TextColor = System.Drawing.Color.Black;
-            this.roundButton7.UseVisualStyleBackColor = false;
-            // 
-            // roundButton6
-            // 
-            this.roundButton6.BackColor = System.Drawing.Color.Transparent;
-            this.roundButton6.BackgroundColor = System.Drawing.Color.Transparent;
-            this.roundButton6.BorderColor = System.Drawing.Color.Gray;
-            this.roundButton6.BorderRadius = 10;
-            this.roundButton6.BorderSize = 1;
-            this.roundButton6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundButton6.FlatAppearance.BorderSize = 0;
-            this.roundButton6.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.roundButton6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.roundButton6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.roundButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton6.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundButton6.ForeColor = System.Drawing.Color.Black;
-            this.roundButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.roundButton6.Location = new System.Drawing.Point(63, 199);
-            this.roundButton6.Name = "roundButton6";
-            this.roundButton6.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.roundButton6.Size = new System.Drawing.Size(210, 40);
-            this.roundButton6.TabIndex = 74;
-            this.roundButton6.Text = "Apertura de la cuenta";
-            this.roundButton6.TextColor = System.Drawing.Color.Black;
-            this.roundButton6.UseVisualStyleBackColor = false;
-            this.roundButton6.Click += new System.EventHandler(this.roundButton6_Click_1);
-            // 
-            // roundButton11
-            // 
-            this.roundButton11.BackColor = System.Drawing.Color.Black;
-            this.roundButton11.BackgroundColor = System.Drawing.Color.Black;
-            this.roundButton11.BorderColor = System.Drawing.Color.Gray;
-            this.roundButton11.BorderRadius = 10;
-            this.roundButton11.BorderSize = 1;
-            this.roundButton11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundButton11.FlatAppearance.BorderSize = 0;
-            this.roundButton11.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.roundButton11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.roundButton11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.roundButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton11.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundButton11.ForeColor = System.Drawing.Color.White;
-            this.roundButton11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.roundButton11.Location = new System.Drawing.Point(63, 105);
-            this.roundButton11.Name = "roundButton11";
-            this.roundButton11.Padding = new System.Windows.Forms.Padding(0, 0, 50, 0);
-            this.roundButton11.Size = new System.Drawing.Size(210, 40);
-            this.roundButton11.TabIndex = 56;
-            this.roundButton11.Text = "Inicio";
-            this.roundButton11.TextColor = System.Drawing.Color.White;
-            this.roundButton11.UseVisualStyleBackColor = false;
-            this.roundButton11.Click += new System.EventHandler(this.roundButton11_Click);
-            // 
-            // roundButton5
-            // 
-            this.roundButton5.BackColor = System.Drawing.Color.Transparent;
-            this.roundButton5.BackgroundColor = System.Drawing.Color.Transparent;
-            this.roundButton5.BorderColor = System.Drawing.Color.Gray;
-            this.roundButton5.BorderRadius = 10;
-            this.roundButton5.BorderSize = 1;
-            this.roundButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundButton5.FlatAppearance.BorderSize = 0;
-            this.roundButton5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.roundButton5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.roundButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.roundButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton5.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundButton5.ForeColor = System.Drawing.Color.Black;
-            this.roundButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.roundButton5.Location = new System.Drawing.Point(63, 151);
-            this.roundButton5.Name = "roundButton5";
-            this.roundButton5.Padding = new System.Windows.Forms.Padding(32, 0, 0, 0);
-            this.roundButton5.Size = new System.Drawing.Size(210, 40);
-            this.roundButton5.TabIndex = 69;
-            this.roundButton5.Text = "Gestion de Clientes";
-            this.roundButton5.TextColor = System.Drawing.Color.Black;
-            this.roundButton5.UseVisualStyleBackColor = false;
-            this.roundButton5.Click += new System.EventHandler(this.roundButton5_Click);
-            // 
-            // roundButton2
-            // 
-            this.roundButton2.BackColor = System.Drawing.Color.Transparent;
-            this.roundButton2.BackgroundColor = System.Drawing.Color.Transparent;
-            this.roundButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.roundButton2.BorderRadius = 8;
-            this.roundButton2.BorderSize = 1;
-            this.roundButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundButton2.FlatAppearance.BorderSize = 0;
-            this.roundButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.roundButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
-            this.roundButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton2.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundButton2.ForeColor = System.Drawing.Color.Black;
-            this.roundButton2.Location = new System.Drawing.Point(1139, 11);
-            this.roundButton2.Name = "roundButton2";
-            this.roundButton2.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.roundButton2.Size = new System.Drawing.Size(97, 40);
-            this.roundButton2.TabIndex = 4;
-            this.roundButton2.Text = "Salir";
-            this.roundButton2.TextColor = System.Drawing.Color.Black;
-            this.roundButton2.UseVisualStyleBackColor = false;
-            this.roundButton2.Click += new System.EventHandler(this.roundButton2_Click);
             // 
             // roundButton1
             // 
@@ -365,14 +378,14 @@
             this.Text = "homeServicioCliente";
             this.contenedor_f.ResumeLayout(false);
             this.contenedor.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictuWarning)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictuPlus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictuConfig)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictuHouse)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -386,15 +399,15 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private APP_BANCO.RoundButton roundButton1;
         private APP_BANCO.RoundButton roundButton3;
-        private APP_BANCO.RoundButton roundButton5;
-        private APP_BANCO.RoundButton roundButton11;
-        private System.Windows.Forms.PictureBox pictureBox10;
+        private APP_BANCO.RoundButton ButtonGC;
+        private APP_BANCO.RoundButton buttonHouse;
+        private System.Windows.Forms.PictureBox PictuHouse;
         private System.Windows.Forms.Panel contenedor_paneles;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private APP_BANCO.RoundButton roundButton7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private APP_BANCO.RoundButton roundButton6;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox PictuWarning;
+        private APP_BANCO.RoundButton ButtonHistorial;
+        private System.Windows.Forms.PictureBox PictuPlus;
+        private APP_BANCO.RoundButton ButtonAC;
+        private System.Windows.Forms.PictureBox PictuConfig;
         private System.Windows.Forms.PictureBox pictureBox2;
         private APP_BANCO.RoundButton roundButton2;
     }
