@@ -96,6 +96,7 @@
             this.textBoxCustom1.TabIndex = 34;
             this.textBoxCustom1.Texts = "";
             this.textBoxCustom1.UnderlinedStyle = false;
+            this.textBoxCustom1._TextChanged += new System.EventHandler(this.textBoxCustom1__TextChanged);
             // 
             // pictureBox1
             // 

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
+using System.Data.Odbc;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -11,8 +13,13 @@ using System.Windows.Forms;
 
 namespace APP_BANK.Cajero
 {
+
+
     public partial class Login : Form
     {
+
+        private ConexionDB dbConnection = new ConexionDB();
+
         // Variables para la animación
         private int moveAmount = 15;
         private int targetPosition;
@@ -87,15 +94,23 @@ namespace APP_BANK.Cajero
 
         private void roundButton2_Click(object sender, EventArgs e)
         {
-            if (textBoxCustom1.Texts == "admin" && textBoxCustom2.Texts == "admin")
+            string nombre = tbx1.Texts;
+            string contrasena = textBoxCustom2.Texts;
+
+            bool usuarioValido = dbConnection.VerificarUsuario(nombre, contrasena);
+
+            if (usuarioValido)
             {
+                MessageBox.Show("Acceso concedido. Bienvenido.");
+                // Aquí abres el formulario que necesites, por ejemplo, CajeroForm
                 AbrirFromMadre(new homeCajero());
             }
             else
             {
-                MessageBox.Show("Usuario o contraseña incorrecta");
+                MessageBox.Show("Credenciales incorrectas.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        
 
         private void roundButton3_Click(object sender, EventArgs e)
         {
@@ -232,6 +247,11 @@ namespace APP_BANK.Cajero
         private void roundButton6_Click(object sender, EventArgs e)
         {
             panel3.Visible = false;
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

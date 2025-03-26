@@ -97,6 +97,7 @@
     <Compile Include="Cajero\Transferencias.Designer.cs">
       <DependentUpon>Transferencias.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConexionDB.cs" />
     <Compile Include="Perfiles.cs">
       <SubType>Form</SubType>
     </Compile>

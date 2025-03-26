@@ -369,5 +369,10 @@ namespace APP_BANK
         }
         ///::::+
         #endregion
+
+        private void TextBoxCustom_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

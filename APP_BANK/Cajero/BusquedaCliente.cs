@@ -16,5 +16,10 @@ namespace APP_BANK.Cajero
         {
             InitializeComponent();
         }
+
+        private void textBoxCustom1__TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

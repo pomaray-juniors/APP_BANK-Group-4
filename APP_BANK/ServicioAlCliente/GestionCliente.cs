@@ -16,5 +16,15 @@ namespace APP_BANK.ServicioAlCliente
         {
             InitializeComponent();
         }
+
+        private void textBoxCustom1__TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void roundButton3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"Intentando login con: Nombre = '{textBoxCustom1.Texts}', sajdasld'");
+        }
     }
 }

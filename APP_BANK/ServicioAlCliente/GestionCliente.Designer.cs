@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.roundButton3 = new APP_BANCO.RoundButton();
-            this.textBoxCustom1 = new APP_BANK.TextBoxCustom();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.roundButton3 = new APP_BANCO.RoundButton();
+            this.textBoxCustom1 = new APP_BANK.TextBoxCustom();
             this.roundButton4 = new APP_BANCO.RoundButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -42,16 +42,39 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.roundButton3);
-            this.panel1.Controls.Add(this.textBoxCustom1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.roundButton4);
+            this.panel1.Controls.Add(this.textBoxCustom1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(919, 548);
             this.panel1.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Font = new System.Drawing.Font("Inter Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.label4.Location = new System.Drawing.Point(106, 62);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(380, 36);
+            this.label4.TabIndex = 38;
+            this.label4.Text = "Busque información de cuentas por número o identificación\r\n\r\n";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Font = new System.Drawing.Font("Inter", 18.75F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(103, 31);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(240, 36);
+            this.label3.TabIndex = 37;
+            this.label3.Text = "Gestion de Cliente";
             // 
             // roundButton3
             // 
@@ -82,6 +105,7 @@
             this.textBoxCustom1.BorderFocusColor = System.Drawing.Color.LightGray;
             this.textBoxCustom1.BorderRadius = 6;
             this.textBoxCustom1.BorderSize = 1;
+            this.textBoxCustom1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBoxCustom1.Font = new System.Drawing.Font("Inter SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCustom1.ForeColor = System.Drawing.SystemColors.GrayText;
             this.textBoxCustom1.Location = new System.Drawing.Point(46, 107);
@@ -96,29 +120,6 @@
             this.textBoxCustom1.TabIndex = 40;
             this.textBoxCustom1.Texts = "";
             this.textBoxCustom1.UnderlinedStyle = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Font = new System.Drawing.Font("Inter Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.label4.Location = new System.Drawing.Point(106, 62);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(380, 36);
-            this.label4.TabIndex = 38;
-            this.label4.Text = "Busque información de cuentas por número o identificación\r\n\r\n";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Font = new System.Drawing.Font("Inter", 18.75F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(103, 31);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(240, 36);
-            this.label3.TabIndex = 37;
-            this.label3.Text = "Gestion de Cliente";
             // 
             // roundButton4
             // 
