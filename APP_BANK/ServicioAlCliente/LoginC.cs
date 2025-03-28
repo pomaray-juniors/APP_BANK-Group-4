@@ -1,7 +1,9 @@
-﻿using System;
+﻿using APP_BANK.Cajero;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,7 +15,11 @@ namespace APP_BANK.ServicioAlCliente
 {
     public partial class LoginC : Form
     {
-        
+        private ConexionDB dbConnection = new ConexionDB();
+
+        private Image eyeOpen = APP_BANK.Properties.Resources.eye;
+        private Image eyeClosed = APP_BANK.Properties.Resources.eye_closed;
+
         private int moveAmount = 15;
         private int targetPosition;  
 
@@ -160,15 +166,44 @@ namespace APP_BANK.ServicioAlCliente
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            // Código para togglear la imagen de eye en este formulario, si aplica
-            // Por ejemplo:
-            // pictureBox6.Image = (pictureBox6.Image == eyeOpen) ? eyeClosed : eyeOpen;
-            // y cambiar textBoxCustom2.PasswordChar según corresponda.
+            pictureBox6.Image = (pictureBox6.Image == eyeOpen) ? eyeClosed : eyeOpen;
+            if (pictureBox6.Image == eyeOpen)
+            {
+                textBoxCustom2.PasswordChar = false;
+            }
+            else
+            {
+                textBoxCustom2.PasswordChar = true;
+            }
         }
 
         private void roundButton2_Click(object sender, EventArgs e)
         {
-            AbrirFromMadre(new ServicioAlCliente.homeServicioCliente());
+            var resultado = dbConnection.VerificarUsuario(textBoxCustom1.Texts, textBoxCustom2.Texts);
+
+            if (!string.IsNullOrEmpty(resultado.error))
+            {
+                MessageBox.Show("Error al verificar usuario: " + resultado.error, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (resultado.usuarioValido)
+            {
+                if (resultado.rol == "Cajero")
+                {
+                    MessageBox.Show("Bienvenido, Cajero.", "No puede ingresar un personal de cajero a este apartado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (resultado.rol == "Gerente")
+                {
+                    AbrirFromMadre(new homeServicioCliente());
+                    MessageBox.Show("Bienvenido, Bienvenido servicio al cliente.", "Acceso Concedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña incorrectos.", "Acceso Denegado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)

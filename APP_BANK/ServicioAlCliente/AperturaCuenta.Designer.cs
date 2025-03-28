@@ -55,6 +55,7 @@
             this.roundButton5 = new APP_BANCO.RoundButton();
             this.label11 = new System.Windows.Forms.Label();
             this.Paso2 = new System.Windows.Forms.Panel();
+            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.roundButton2 = new APP_BANCO.RoundButton();
             this.textBoxCustom7 = new APP_BANK.TextBoxCustom();
             this.roundButton1 = new APP_BANCO.RoundButton();
@@ -82,7 +83,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.roundButton4 = new APP_BANCO.RoundButton();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.paso3.SuspendLayout();
@@ -172,10 +172,11 @@
             this.paso3.Controls.Add(this.roundButton3);
             this.paso3.Controls.Add(this.roundButton5);
             this.paso3.Controls.Add(this.label11);
-            this.paso3.Location = new System.Drawing.Point(713, 8);
+            this.paso3.Location = new System.Drawing.Point(674, 12);
             this.paso3.Name = "paso3";
-            this.paso3.Size = new System.Drawing.Size(31, 18);
+            this.paso3.Size = new System.Drawing.Size(23, 14);
             this.paso3.TabIndex = 43;
+            this.paso3.Paint += new System.Windows.Forms.PaintEventHandler(this.paso3_Paint);
             // 
             // guna2HtmlLabel1
             // 
@@ -488,11 +489,65 @@
             this.Paso2.Controls.Add(this.label9);
             this.Paso2.Controls.Add(this.textBoxCustom6);
             this.Paso2.Controls.Add(this.label10);
-            this.Paso2.Location = new System.Drawing.Point(605, 8);
+            this.Paso2.Location = new System.Drawing.Point(703, 12);
             this.Paso2.Name = "Paso2";
-            this.Paso2.Size = new System.Drawing.Size(39, 29);
+            this.Paso2.Size = new System.Drawing.Size(12, 20);
             this.Paso2.TabIndex = 2;
             this.Paso2.Paint += new System.Windows.Forms.PaintEventHandler(this.Paso2_Paint);
+            // 
+            // guna2ComboBox2
+            // 
+            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox2.BorderColor = System.Drawing.Color.Silver;
+            this.guna2ComboBox2.BorderRadius = 5;
+            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox2.Font = new System.Drawing.Font("Inter SemiBold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.guna2ComboBox2.ItemHeight = 30;
+            this.guna2ComboBox2.Items.AddRange(new object[] {
+            "",
+            "Azua",
+            "Bahoruco",
+            "Barahona",
+            "Dajabón",
+            "Distrito Nacional",
+            "Duarte",
+            "El Seibo",
+            "Elías Piña",
+            "Espaillat",
+            "Hato Mayor",
+            "Hermanas Mirabal",
+            "Independencia",
+            "La Altagracia",
+            "La Romana",
+            "La Vega",
+            "María Trinidad Sánchez",
+            "Monseñor Nouel",
+            "Monte Cristi",
+            "Monte Plata",
+            "Pedernales",
+            "Peravia",
+            "Puerto Plata",
+            "Samaná",
+            "San Cristóbal",
+            "San José de Ocoa",
+            "San Juan",
+            "San Pedro de Macorís",
+            "Sánchez Ramírez",
+            "Santiago",
+            "Santiago Rodríguez",
+            "Santo Domingo",
+            "Valverde"});
+            this.guna2ComboBox2.Location = new System.Drawing.Point(35, 254);
+            this.guna2ComboBox2.Name = "guna2ComboBox2";
+            this.guna2ComboBox2.Size = new System.Drawing.Size(757, 36);
+            this.guna2ComboBox2.Sorted = true;
+            this.guna2ComboBox2.StartIndex = 0;
+            this.guna2ComboBox2.TabIndex = 43;
+            this.guna2ComboBox2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
             // 
             // roundButton2
             // 
@@ -657,10 +712,11 @@
             this.paso1.Controls.Add(this.textBoxCustom2);
             this.paso1.Controls.Add(this.label2);
             this.paso1.Controls.Add(this.guna2ComboBox1);
-            this.paso1.Location = new System.Drawing.Point(661, 8);
+            this.paso1.Location = new System.Drawing.Point(740, 3);
             this.paso1.Name = "paso1";
-            this.paso1.Size = new System.Drawing.Size(35, 24);
+            this.paso1.Size = new System.Drawing.Size(19, 11);
             this.paso1.TabIndex = 1;
+            this.paso1.Paint += new System.Windows.Forms.PaintEventHandler(this.paso1_Paint);
             // 
             // roundButton8
             // 
@@ -933,88 +989,6 @@
             this.roundButton4.TabIndex = 55;
             this.roundButton4.TextColor = System.Drawing.Color.White;
             this.roundButton4.UseVisualStyleBackColor = false;
-            // 
-            // guna2ComboBox2
-            // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.BorderColor = System.Drawing.Color.Silver;
-            this.guna2ComboBox2.BorderRadius = 5;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Inter SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Items.AddRange(new object[] {
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "Azua",
-            "Bahoruco",
-            "Barahona",
-            "Dajabón",
-            "Distrito Nacional",
-            "Duarte",
-            "El Seibo",
-            "Elías Piña",
-            "Espaillat",
-            "Hato Mayor",
-            "Hermanas Mirabal",
-            "Independencia",
-            "La Altagracia",
-            "La Romana",
-            "La Vega",
-            "María Trinidad Sánchez",
-            "Monseñor Nouel",
-            "Monte Cristi",
-            "Monte Plata",
-            "Pedernales",
-            "Peravia",
-            "Puerto Plata",
-            "Samaná",
-            "San Cristóbal",
-            "San José de Ocoa",
-            "San Juan",
-            "San Pedro de Macorís",
-            "Sánchez Ramírez",
-            "Santiago",
-            "Santiago Rodríguez",
-            "Santo Domingo",
-            "Valverde"});
-            this.guna2ComboBox2.Location = new System.Drawing.Point(35, 254);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.Size = new System.Drawing.Size(757, 36);
-            this.guna2ComboBox2.Sorted = true;
-            this.guna2ComboBox2.StartIndex = 0;
-            this.guna2ComboBox2.TabIndex = 43;
-            this.guna2ComboBox2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
             // 
             // AperturaCuenta
             // 

@@ -120,7 +120,7 @@
             this.ButtonHistorial.Padding = new System.Windows.Forms.Padding(0, 0, 40, 0);
             this.ButtonHistorial.Size = new System.Drawing.Size(210, 40);
             this.ButtonHistorial.TabIndex = 76;
-            this.ButtonHistorial.Text = "Historial";
+            this.ButtonHistorial.Text = "Reclamos";
             this.ButtonHistorial.TextColor = System.Drawing.Color.Black;
             this.ButtonHistorial.UseVisualStyleBackColor = false;
             this.ButtonHistorial.Click += new System.EventHandler(this.ButtonHistorial_Click);

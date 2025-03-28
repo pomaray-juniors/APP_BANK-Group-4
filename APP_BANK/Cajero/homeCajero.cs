@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -188,14 +182,14 @@ namespace APP_BANK.Cajero
             roundButton13.BackColor = Color.FromArgb(0, 0, 255, 255);
             roundButton14.BackColor = Color.FromArgb(0, 0, 255, 255);
             roundButton15.BackColor = Color.FromArgb(0, 0, 255, 255);
-            roundButton16.BackColor = Color.FromArgb(0, 0, 255, 255);
+            
 
             roundButton11.ForeColor = Color.Black;
             roundButton12.ForeColor = Color.White;
             roundButton13.ForeColor = Color.Black;
             roundButton14.ForeColor = Color.Black;
             roundButton15.ForeColor = Color.Black;
-            roundButton16.ForeColor = Color.Black;
+            
 
             AbrirFromMadre(new Cajero.Transferencias());
 
@@ -214,9 +208,7 @@ namespace APP_BANK.Cajero
             pictureBox10.Image = Properties.Resources.magnifying_glass;
             pictureBox10.BackColor = Color.White;
 
-            pictureBox11.Image = Properties.Resources.clock;
-            pictureBox11.BackColor = Color.White;
-        
+
         }
 
         private void roundButton12_Click(object sender, EventArgs e)
@@ -226,14 +218,14 @@ namespace APP_BANK.Cajero
             roundButton13.BackColor = Color.FromArgb(0, 0, 255, 255);
             roundButton14.BackColor = Color.FromArgb(0, 0, 255, 255);
             roundButton15.BackColor = Color.FromArgb(0, 0, 255, 255);
-            roundButton16.BackColor = Color.FromArgb(0, 0, 255, 255);
+           
 
             roundButton11.ForeColor = Color.Black;
             roundButton12.ForeColor = Color.White;
             roundButton13.ForeColor = Color.Black;
             roundButton14.ForeColor = Color.Black;
             roundButton15.ForeColor = Color.Black;
-            roundButton16.ForeColor = Color.Black;
+            
 
             pictureBox6.Image = Properties.Resources.house_black;
             pictureBox6.BackColor = Color.White;
@@ -250,8 +242,7 @@ namespace APP_BANK.Cajero
             pictureBox10.Image = Properties.Resources.magnifying_glass;
             pictureBox10.BackColor = Color.White;
 
-            pictureBox11.Image = Properties.Resources.clock;
-            pictureBox11.BackColor = Color.White;
+           
 
             AbrirFromMadre(new Cajero.Transferencias());
         }
@@ -266,14 +257,14 @@ namespace APP_BANK.Cajero
             roundButton13.BackColor = Color.FromArgb(0, 0, 255, 255);
             roundButton14.BackColor = Color.FromArgb(0, 0, 255, 255);
             roundButton15.BackColor = Color.FromArgb(0, 0, 255, 255);
-            roundButton16.BackColor = Color.FromArgb(0, 0, 255, 255);
+         
 
             roundButton11.ForeColor = Color.White;
             roundButton12.ForeColor = Color.Black;
             roundButton13.ForeColor = Color.Black;
             roundButton14.ForeColor = Color.Black;
             roundButton15.ForeColor = Color.Black;
-            roundButton16.ForeColor = Color.Black;
+         
 
             pictureBox6.Image = Properties.Resources.house_white;
             pictureBox6.BackColor = Color.Black;
@@ -290,8 +281,7 @@ namespace APP_BANK.Cajero
             pictureBox10.Image = Properties.Resources.magnifying_glass;
             pictureBox10.BackColor = Color.White;
 
-            pictureBox11.Image = Properties.Resources.clock;
-            pictureBox11.BackColor = Color.White;
+            
 
             AbrirFromMadreD(new PanelControl(this));
         }
@@ -304,14 +294,13 @@ namespace APP_BANK.Cajero
             roundButton13.BackColor = Color.Black;
             roundButton14.BackColor = Color.FromArgb(0, 0, 255, 255);
             roundButton15.BackColor = Color.FromArgb(0, 0, 255, 255);
-            roundButton16.BackColor = Color.FromArgb(0, 0, 255, 255);
+           
 
             roundButton11.ForeColor = Color.Black;
             roundButton12.ForeColor = Color.Black;
             roundButton13.ForeColor = Color.White;
             roundButton14.ForeColor = Color.Black;
             roundButton15.ForeColor = Color.Black;
-            roundButton16.ForeColor = Color.Black;
 
             AbrirFromMadre(new Cajero.Deposito());
 
@@ -330,8 +319,7 @@ namespace APP_BANK.Cajero
             pictureBox10.Image = Properties.Resources.magnifying_glass;
             pictureBox10.BackColor = Color.White;
 
-            pictureBox11.Image = Properties.Resources.clock;
-            pictureBox11.BackColor = Color.White;
+
         }
 
         private void roundButton13_Click_1(object sender, EventArgs e)
@@ -341,14 +329,13 @@ namespace APP_BANK.Cajero
             roundButton13.BackColor = Color.Black;
             roundButton14.BackColor = Color.FromArgb(0, 0, 255, 255);
             roundButton15.BackColor = Color.FromArgb(0, 0, 255, 255);
-            roundButton16.BackColor = Color.FromArgb(0, 0, 255, 255);
+
 
             roundButton11.ForeColor = Color.Black;
             roundButton12.ForeColor = Color.Black;
             roundButton13.ForeColor = Color.White;
             roundButton14.ForeColor = Color.Black;
             roundButton15.ForeColor = Color.Black;
-            roundButton16.ForeColor = Color.Black;
 
             pictureBox6.Image = Properties.Resources.house_black;
             pictureBox6.BackColor = Color.White;
@@ -365,8 +352,7 @@ namespace APP_BANK.Cajero
             pictureBox10.Image = Properties.Resources.magnifying_glass;
             pictureBox10.BackColor = Color.White;
 
-            pictureBox11.Image = Properties.Resources.clock;
-            pictureBox11.BackColor = Color.White;
+
 
             AbrirFromMadre(new Cajero.Deposito());
         }
@@ -380,14 +366,13 @@ namespace APP_BANK.Cajero
             roundButton13.BackColor = Color.FromArgb(0, 0, 255, 255);
             roundButton14.BackColor = Color.Black;
             roundButton15.BackColor = Color.FromArgb(0, 0, 255, 255);
-            roundButton16.BackColor = Color.FromArgb(0, 0, 255, 255);
 
             roundButton11.ForeColor = Color.Black;
             roundButton12.ForeColor = Color.Black;
             roundButton13.ForeColor = Color.Black;
             roundButton14.ForeColor = Color.White;
             roundButton15.ForeColor = Color.Black;
-            roundButton16.ForeColor = Color.Black;
+
 
             AbrirFromMadre(new Cajero.Retiros());
 
@@ -406,8 +391,7 @@ namespace APP_BANK.Cajero
             pictureBox10.Image = Properties.Resources.magnifying_glass;
             pictureBox10.BackColor = Color.White;
 
-            pictureBox11.Image = Properties.Resources.clock;
-            pictureBox11.BackColor = Color.White;
+
         }
 
         private void roundButton14_Click_1(object sender, EventArgs e)
@@ -417,14 +401,14 @@ namespace APP_BANK.Cajero
             roundButton13.BackColor = Color.FromArgb(0, 0, 255, 255);
             roundButton14.BackColor = Color.Black;
             roundButton15.BackColor = Color.FromArgb(0, 0, 255, 255);
-            roundButton16.BackColor = Color.FromArgb(0, 0, 255, 255);
+
 
             roundButton11.ForeColor = Color.Black;
             roundButton12.ForeColor = Color.Black;
             roundButton13.ForeColor = Color.Black;
             roundButton14.ForeColor = Color.White;
             roundButton15.ForeColor = Color.Black;
-            roundButton16.ForeColor = Color.Black;
+
 
             pictureBox6.Image = Properties.Resources.house_black;
             pictureBox6.BackColor = Color.White;
@@ -441,8 +425,7 @@ namespace APP_BANK.Cajero
             pictureBox10.Image = Properties.Resources.magnifying_glass;
             pictureBox10.BackColor = Color.White;
 
-            pictureBox11.Image = Properties.Resources.clock;
-            pictureBox11.BackColor = Color.White;
+
 
             AbrirFromMadre(new Cajero.Retiros());
         }
@@ -455,14 +438,14 @@ namespace APP_BANK.Cajero
             roundButton13.BackColor = Color.FromArgb(0, 0, 255, 255);
             roundButton14.BackColor = Color.FromArgb(0, 0, 255, 255);
             roundButton15.BackColor = Color.Black;
-            roundButton16.BackColor = Color.FromArgb(0, 0, 255, 255);
+
 
             roundButton11.ForeColor = Color.Black;
             roundButton12.ForeColor = Color.Black;
             roundButton13.ForeColor = Color.Black;
             roundButton14.ForeColor = Color.Black;
             roundButton15.ForeColor = Color.White;
-            roundButton16.ForeColor = Color.Black;
+
 
             pictureBox6.Image = Properties.Resources.house_black;
             pictureBox6.BackColor = Color.White;
@@ -479,8 +462,7 @@ namespace APP_BANK.Cajero
             pictureBox10.Image = Properties.Resources.magnifying_glass_white;
             pictureBox10.BackColor = Color.Black;
 
-            pictureBox11.Image = Properties.Resources.clock;
-            pictureBox11.BackColor = Color.White;
+
 
             AbrirFromMadre(new Cajero.BusquedaCliente());
         }
@@ -493,14 +475,14 @@ namespace APP_BANK.Cajero
             roundButton13.BackColor = Color.FromArgb(0, 0, 255, 255);
             roundButton14.BackColor = Color.FromArgb(0, 0, 255, 255);
             roundButton15.BackColor = Color.FromArgb(0, 0, 255, 255);
-            roundButton16.BackColor = Color.Black;
+
 
             roundButton11.ForeColor = Color.Black;
             roundButton12.ForeColor = Color.Black;
             roundButton13.ForeColor = Color.Black;
             roundButton14.ForeColor = Color.Black;
             roundButton15.ForeColor = Color.Black;
-            roundButton16.ForeColor = Color.White;
+
 
             pictureBox6.Image = Properties.Resources.house_black;
             pictureBox6.BackColor = Color.White;
@@ -517,8 +499,7 @@ namespace APP_BANK.Cajero
             pictureBox10.Image = Properties.Resources.magnifying_glass;
             pictureBox10.BackColor = Color.White;
 
-            pictureBox11.Image = Properties.Resources.clock_white;
-            pictureBox11.BackColor = Color.Black;
+           
         }
 
 
@@ -544,8 +525,9 @@ namespace APP_BANK.Cajero
             Button btn = sender as Button;
 
             if (btn.BackColor == Color.Black)
-            { btn.ForeColor = Color.White;
-                
+            {
+                btn.ForeColor = Color.White;
+
             }
             else
             { btn.ForeColor = Color.Black; }
@@ -553,7 +535,7 @@ namespace APP_BANK.Cajero
 
         private void roundButton8_Click(object sender, EventArgs e)
         {
-            
+
             AbrirFromMadre(new Cajero.Transferencias());
         }
 
@@ -681,23 +663,12 @@ namespace APP_BANK.Cajero
         // Botón 6: Historial - Asociado a pictureBox11
         private void roundButton16_MouseEnter(object sender, EventArgs e)
         {
-            if (roundButton16.BackColor != Color.Black)
-            {
-                roundButton16.ForeColor = Color.White;
-                pictureBox11.Image = Properties.Resources.clock_white;
-                pictureBox11.BackColor = Color.Black;
-            }
+           
         }
 
         private void roundButton16_MouseLeave(object sender, EventArgs e)
         {
-            if (roundButton16.BackColor != Color.Black)
-            {
-                roundButton16.ForeColor = Color.Black;
-                // En este caso, la imagen por defecto es clock, según tu código en el Click
-                pictureBox11.Image = Properties.Resources.clock;
-                pictureBox11.BackColor = Color.White;
-            }
+           
         }
     }
 }

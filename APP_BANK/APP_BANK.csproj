@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alerts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alerts.Designer.cs">
+      <DependentUpon>Alerts.cs</DependentUpon>
+    </Compile>
     <Compile Include="ButtonRound.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -98,6 +104,12 @@
       <DependentUpon>Transferencias.cs</DependentUpon>
     </Compile>
     <Compile Include="ConexionDB.cs" />
+    <Compile Include="InicioAPP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioAPP.Designer.cs">
+      <DependentUpon>InicioAPP.cs</DependentUpon>
+    </Compile>
     <Compile Include="Perfiles.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,12 +148,21 @@
     <Compile Include="ServicioAlCliente\LoginC.Designer.cs">
       <DependentUpon>LoginC.cs</DependentUpon>
     </Compile>
+    <Compile Include="ServicioAlCliente\Reclamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServicioAlCliente\Reclamos.Designer.cs">
+      <DependentUpon>Reclamos.cs</DependentUpon>
+    </Compile>
     <Compile Include="TextBoxCustom.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="TextBoxCustom.Designer.cs">
       <DependentUpon>TextBoxCustom.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Alerts.resx">
+      <DependentUpon>Alerts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cajero\BusquedaCliente.resx">
       <DependentUpon>BusquedaCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cajero\Transferencias.resx">
       <DependentUpon>Transferencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioAPP.resx">
+      <DependentUpon>InicioAPP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Perfiles.resx">
       <DependentUpon>Perfiles.cs</DependentUpon>
@@ -190,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ServicioAlCliente\LoginC.resx">
       <DependentUpon>LoginC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServicioAlCliente\Reclamos.resx">
+      <DependentUpon>Reclamos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TextBoxCustom.resx">
       <DependentUpon>TextBoxCustom.cs</DependentUpon>
@@ -336,6 +363,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\Icons\warning-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Icons\piggy-bank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Icons\user-bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Icons\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Icons\map-pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Icons\floppy-disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Icons\check-circle-bold %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Icons\warning-bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Icons\x-bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\logo\X.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

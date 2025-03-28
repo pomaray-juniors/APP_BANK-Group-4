@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ namespace APP_BANK.Cajero
 {
     public partial class Deposito : Form
     {
+        private ConexionDB dbConnection = new ConexionDB();
+
         public Deposito()
         {
             InitializeComponent();
@@ -74,6 +77,34 @@ namespace APP_BANK.Cajero
 
         private void roundButton1_Click(object sender, EventArgs e)
         {
+            int cuentaDestino;
+            decimal monto;
+
+            if (!int.TryParse(textBoxCustom2.Texts, out cuentaDestino))
+            {
+                MessageBox.Show("Ingrese un número de cuenta válido.");
+                return;
+            }
+
+            if (!decimal.TryParse(textBoxCustom3.Texts, out monto) || monto <= 0)
+            {
+                MessageBox.Show("Ingrese un monto válido mayor a 0.");
+                return;
+            }
+
+            string tipoDeposito = checkBox1.Checked ? "Efectivo" : "Cheque";
+            string numeroCheque = tipoDeposito == "Cheque" ? textBoxCustom1.Texts : null;
+
+            bool resultado = dbConnection.RealizarDeposito(cuentaDestino, monto, tipoDeposito, numeroCheque);
+
+            if (resultado)
+            {
+                MessageBox.Show("Depósito realizado con éxito.");
+            }
+            else
+            {
+                MessageBox.Show("Error al realizar el depósito. Verifique la cuenta de destino.");
+            }
 
         }
 
@@ -93,6 +124,11 @@ namespace APP_BANK.Cajero
             {
                 e.Handled = true; // Bloquea la entrada si no es número
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

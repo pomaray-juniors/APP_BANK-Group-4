@@ -85,7 +85,7 @@
             this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contenedor.Location = new System.Drawing.Point(0, 0);
             this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(1251, 711);
+            this.contenedor.Size = new System.Drawing.Size(1254, 711);
             this.contenedor.TabIndex = 0;
             this.contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.contenedor_Paint);
             // 
@@ -547,7 +547,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1251, 711);
+            this.ClientSize = new System.Drawing.Size(1254, 711);
             this.Controls.Add(this.contenedor);
             this.Name = "Perfiles";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

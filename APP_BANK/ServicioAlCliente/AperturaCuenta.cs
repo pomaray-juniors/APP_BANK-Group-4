@@ -47,6 +47,17 @@ namespace APP_BANK.ServicioAlCliente
             guna2ProgressBar1.Value = 50;
             paso1.Dock = DockStyle.None;
             Paso2.Dock = DockStyle.Fill;
+
+            string documento = guna2ComboBox1.Text;
+            int numeroDocumento = Convert.ToInt32(textBoxCustom2.Texts);
+            string nombre = textBoxCustom1.Texts;
+            string apellido = textBoxCustom3.Texts;
+
+
+            if (documento == null || numeroDocumento == 0 || nombre == null || apellido == null || numeroDocumento == null)
+            {
+                MessageBox.Show("Por favor llena todos los campos.");
+            }
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -56,6 +67,17 @@ namespace APP_BANK.ServicioAlCliente
 
         private void roundButton2_Click(object sender, EventArgs e)
         {
+
+            string email = textBoxCustom7.Texts;
+            string telefono = textBoxCustom6.Texts;
+            string direccion = textBoxCustom5.Texts;
+            string ciudad = guna2ComboBox2.Text;
+
+            email = "";
+            telefono = "";
+            direccion = "";
+            ciudad = "";
+
             Paso2.Dock = DockStyle.None;
             paso1.Dock = DockStyle.Fill;
             guna2ProgressBar1.Value = 0;
@@ -68,6 +90,9 @@ namespace APP_BANK.ServicioAlCliente
 
         private void roundButton3_Click(object sender, EventArgs e)
         {
+            textBoxCustom8.Texts = "";
+
+
             Paso2.Dock = DockStyle.Fill;
             paso3.Dock = DockStyle.None;
             guna2ProgressBar1.Value = 50;
@@ -75,11 +100,88 @@ namespace APP_BANK.ServicioAlCliente
 
         private void roundButton5_Click(object sender, EventArgs e)
         {
+            // Obtener los valores de los TextBox
+            string nombre = textBoxCustom1.Texts.Trim();
+            string apellido = textBoxCustom3.Texts.Trim();
+            string email = textBoxCustom7.Texts.Trim();
+            string telefono = textBoxCustom6.Texts.Trim();
+            string direccion = textBoxCustom5.Texts.Trim();
+            string montoTexto = textBoxCustom8.Texts.Trim();
+
+            // Verificar que no haya campos vacíos
+            if (string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(apellido) ||
+                string.IsNullOrEmpty(email) || string.IsNullOrEmpty(telefono) ||
+                string.IsNullOrEmpty(direccion) || string.IsNullOrEmpty(montoTexto))
+            {
+                MessageBox.Show("Por favor, completa todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Intentar convertir el monto a decimal
+            if (!decimal.TryParse(montoTexto.Replace(',', '.'), System.Globalization.NumberStyles.Float,
+                                  System.Globalization.CultureInfo.InvariantCulture, out decimal monto))
+            {
+                MessageBox.Show("El monto ingresado no es válido. Usa solo números.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Determinar tipo de cuenta
+            string tipoCuenta = guna2CustomRadioButton1.Checked ? "Ahorros" :
+                                guna2CustomRadioButton2.Checked ? "Corriente" : "Empresarial";
+
+            // Validar que la cédula sea un número válido
+            if (!int.TryParse(textBoxCustom2.Texts.Trim(), out int cedula))
+            {
+                MessageBox.Show("La cédula ingresada no es válida.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Generar número de cuenta aleatorio
+            Random random = new Random();
+            int numeroCuenta = random.Next(100000, 999999);
+
+            // Verificar si la cédula ya existe en la base de datos antes de insertar
+            ConexionDB conexion = new ConexionDB();
+            if (conexion.ExisteCedula(cedula))
+            {
+                MessageBox.Show("El cliente ya está registrado.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Intentar insertar en la base de datos
+            try
+            {
+                conexion.InsertarUsuario(cedula, nombre, apellido, email, telefono, direccion, tipoCuenta, monto, numeroCuenta);
+                MessageBox.Show("Usuario registrado con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al registrar usuario: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
 
         }
 
         private void roundButton1_Click(object sender, EventArgs e)
         {
+
+            string email = textBoxCustom7.Texts;
+            string telefono = textBoxCustom6.Texts;
+            string direccion = textBoxCustom5.Texts;
+            string ciudad = guna2ComboBox2.Text;
+
+            if (email == null || telefono == null || direccion == null || ciudad == null)
+            {
+                MessageBox.Show("Por favor llena todos los campos.");
+            }
+
+
+
+
+
+
+
+
             Paso2.Dock = DockStyle.None;
             paso3.Dock= DockStyle.Fill;
             guna2ProgressBar1.Value = 100;
@@ -186,6 +288,16 @@ namespace APP_BANK.ServicioAlCliente
             {
                 e.Handled = true; // Bloquea la entrada si no es número
             }
+        }
+
+        private void paso3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void paso1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 
