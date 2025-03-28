@@ -1,4 +1,4 @@
-﻿namespace APP_BANK.ServicioAlCliente
+namespace APP_BANK.ServicioAlCliente
 {
     partial class GestionCliente
     {
@@ -286,7 +286,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Inter Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.textBox1.Location = new System.Drawing.Point(64, 84);
+            this.textBox1.Location = new System.Drawing.Point(64, 83);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(169, 16);
             this.textBox1.TabIndex = 51;
